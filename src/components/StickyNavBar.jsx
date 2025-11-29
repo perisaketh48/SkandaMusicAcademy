@@ -64,7 +64,7 @@ export const StickyNavbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="text-black md:hidden"
+          className="flex md:hidden text-black"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={26} /> : <Menu size={26} />}
