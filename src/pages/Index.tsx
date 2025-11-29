@@ -14,7 +14,7 @@ import { DemoClass } from "@/components/DemoClass";
 import { BookingForm } from "@/components/BookingForm";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
-import { StickyNavbar } from "@/components/StickyNavbar";
+import { StickyNavbar } from "@/components/StickyNavBar";
 
 const Index = () => {
   return (
