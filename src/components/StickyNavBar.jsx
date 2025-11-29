@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// lp
 export const StickyNavbar = () => {
   const [visible, setVisible] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
