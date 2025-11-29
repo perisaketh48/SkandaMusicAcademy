@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Indian Classical Music Theme - Warm, Traditional, Elegant */
+    --background: 40 35% 96%; /* Warm cream */
+    --foreground: 30 35% 20%; /* Deep brown */
+
+    --card: 0 0% 100%; /* Pure white for cards */
+    --card-foreground: 30 35% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 35% 20%;
+
+    --primary: 350 65% 35%; /* Deep maroon - traditional Indian classical */
+    --primary-foreground: 45 80% 90%; /* Soft gold/cream */
+
+    --secondary: 45 90% 55%; /* Rich gold */
+    --secondary-foreground: 30 40% 20%; /* Deep brown */
+
+    --muted: 40 25% 88%; /* Soft beige */
+    --muted-foreground: 30 20% 50%;
+
+    --accent: 190 75% 45%; /* Peacock blue */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 85%; /* Warm subtle border */
+    --input: 40 20% 90%;
+    --ring: 350 65% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients for Indian aesthetic */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(350 65% 35%),
+      hsl(350 75% 45%)
+    );
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 55%), hsl(45 100% 65%));
+    --gradient-warm: linear-gradient(180deg, hsl(40 35% 96%), hsl(45 45% 92%));
+
+    /* Shadows with warmth */
+    --shadow-warm: 0 4px 20px -4px hsl(350 65% 35% / 0.15);
+    --shadow-glow: 0 0 30px hsl(45 90% 55% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 30% 12%;
+    --foreground: 45 80% 90%;
+
+    --card: 30 25% 16%;
+    --card-foreground: 45 80% 90%;
+
+    --popover: 30 25% 16%;
+    --popover-foreground: 45 80% 90%;
+
+    --primary: 350 75% 45%;
+    --primary-foreground: 45 80% 90%;
+
+    --secondary: 45 80% 50%;
+    --secondary-foreground: 30 30% 12%;
+
+    --muted: 30 20% 22%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 190 75% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 25%;
+    --input: 30 20% 25%;
+    --ring: 350 75% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-secondary to-yellow-400 bg-clip-text text-transparent;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .rangoli-pattern {
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        hsl(350 65% 35% / 0.05) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        hsl(45 90% 55% / 0.05) 0%,
+        transparent 50%
+      );
+  }
+}
+
+body,
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
