@@ -133,7 +133,7 @@ const VisionMissionSection = () => {
 
                   <p>
                     Our dream is to create a space where students feel truly
-                    seen, valued, and inspired — a place where tradition is
+                    seen, valued, and inspired, a place where tradition is
                     honoured with devotion, and learning unfolds with warmth,
                     patience, and personal care.
                   </p>
@@ -177,7 +177,7 @@ const VisionMissionSection = () => {
               {/* IMAGE */}
               <div className="w-full lg:w-1/2">
                 <img
-                  src="/Assets/images/7.jpg"
+                  src="/Assets/images/15.jpg"
                   alt="Carnatic music teaching"
                   className="rounded-2xl shadow-xl object-cover"
                 />

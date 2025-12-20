@@ -238,7 +238,7 @@ const DemoClass = () => {
               convinced me this was the right place for my musical journey."
             </p>
             <footer className="text-primary-foreground/80">
-              — Priya K., Student from California
+              Priya K., Student from California
             </footer>
           </blockquote>
         </div>

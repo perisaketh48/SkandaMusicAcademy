@@ -207,7 +207,7 @@ const Contact = () => {
                     here to guide you every step of the way."
                   </p>
                   <p className="text-primary-foreground/60 text-sm mt-2">
-                    — The Skanda Team
+                    The Skanda Team
                   </p>
                 </div>
               </div>

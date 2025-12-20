@@ -285,107 +285,77 @@ import { Badge } from "@/components/ui/badge";
 const galleryItems = [
   {
     id: 1,
-    title: "Kacheri Performance",
-    description: "Traditional Carnatic concert",
-    category: "Concert",
+
     image: "/Assets/images/1.jpg",
   },
   {
     id: 2,
-    title: "Student Keerthana",
-    description: "Classical keerthanas",
-    category: "Students",
+
     image: "/Assets/images/2.jpg",
   },
   {
     id: 3,
-    title: "Veena Accompaniment",
-    description: "Classical veena support",
-    category: "Instruments",
+
     image: "/Assets/images/3.jpg",
   },
   {
     id: 4,
-    title: "Mridangam Practice",
-    description: "Rhythm training",
-    category: "Instruments",
+
     image: "/Assets/images/4.jpg",
   },
   {
     id: 5,
-    title: "Annual Concert",
-    description: "Student recital",
-    category: "Concert",
+
     image: "/Assets/images/5.jpg",
   },
   {
     id: 6,
-    title: "Online Class",
-    description: "Live Carnatic session",
-    category: "Classes",
+
     image: "/Assets/images/6.jpg",
   },
   {
     id: 7,
-    title: "Advanced Training",
-    description: "One-on-one guidance",
-    category: "Classes",
+
     image: "/Assets/images/7.jpg",
   },
   {
     id: 8,
-    title: "Bhajan Session",
-    description: "Devotional singing",
-    category: "Performance",
+
     image: "/Assets/images/8.jpg",
   },
   {
     id: 9,
-    title: "Group Practice",
-    description: "Shruti & tala",
-    category: "Students",
+
     image: "/Assets/images/9.jpg",
   },
   {
     id: 10,
-    title: "Stage Performance",
-    description: "Live concert",
-    category: "Concert",
+
     image: "/Assets/images/10.jpg",
   },
   {
     id: 11,
-    title: "Voice Culture",
-    description: "Breath & pitch",
-    category: "Classes",
+
     image: "/Assets/images/11.jpg",
   },
   {
     id: 12,
-    title: "Violin Support",
-    description: "Classical violin",
-    category: "Instruments",
+
     image: "/Assets/images/12.jpg",
   },
   {
     id: 13,
-    title: "Young Learners",
-    description: "Foundation training",
-    category: "Students",
+
     image: "/Assets/images/13.jpg",
   },
   {
     id: 14,
-    title: "Temple Bhajan",
-    description: "Devotional music",
-    category: "Performance",
+
     image: "/Assets/images/14.jpg",
   },
   {
     id: 15,
-    title: "Group Class",
-    description: "Interactive learning",
-    category: "Classes",
+
     image: "/Assets/images/15.jpg",
   },
 ];
@@ -487,10 +457,6 @@ const Gallery = () => {
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
                       <div className="absolute bottom-4 left-4">
-                        <Badge className="bg-background/90 text-primary mb-2">
-                          <Icon className="h-3 w-3 mr-1" />
-                          {item.category}
-                        </Badge>
                         <h3 className="text-white text-sm font-serif font-semibold">
                           {item.title}
                         </h3>
@@ -514,7 +480,6 @@ const Gallery = () => {
                 {/* IMAGE */}
                 <img
                   src={galleryItems[selectedIndex].image}
-                  alt={galleryItems[selectedIndex].title}
                   className="absolute inset-0 w-full h-full object-contain"
                 />
 
@@ -530,21 +495,13 @@ const Gallery = () => {
                 </button>
 
                 {/* CONTENT */}
-                <div className="relative z-10 h-full flex items-end">
+                {/* <div className="relative z-10 h-full flex items-end">
                   <div className="w-full p-6 md:p-8">
-                    <p className="mb-3 bg-background/90 text-primary bg-secondary inline-block px-3 py-1 rounded text-sm font-medium">
-                      {galleryItems[selectedIndex].category}
-                    </p>
-
-                    <h3 className="font-serif text-2xl md:text-3xl font-semibold text-white mb-2">
-                      {galleryItems[selectedIndex].title}
-                    </h3>
-
                     <p className="text-white/90 max-w-3xl">
                       {galleryItems[selectedIndex].description}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             )}
           </DialogContent>

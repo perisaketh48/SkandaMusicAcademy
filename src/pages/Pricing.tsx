@@ -185,7 +185,7 @@ const Pricing = () => {
           <p className="text-primary-foreground/90 max-w-2xl mx-auto mb-8 text-lg">
             We're confident you'll love learning with us. If you're not
             completely satisfied within the first 30 days, we'll refund your
-            payment—no questions asked.
+            payment, no questions asked.
           </p>
           <Button
             asChild

@@ -140,7 +140,7 @@ const About = () => {
             <div className="relative fade-in-up">
               <div className="relative rounded-3xl overflow-hidden shadow-elegant">
                 <img
-                  src="/Assets/images/11.jpg" // <-- add founder image here
+                  src="/Assets/images/14.jpg" // <-- add founder image here
                   alt="Ramani Varahabhatla - Founder of Skanda Music Academy"
                   className="w-full h-auto object-cover"
                 />

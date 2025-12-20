@@ -19,8 +19,8 @@ const FoundersMessage = () => {
                 repeatedly until it was perfect. It taught me patience when
                 mastering a new raga took months of dedicated effort. It taught
                 me humility when I realised how vast and deep this ocean of
-                knowledge truly is. And it taught me joy—the incomparable joy of
-                losing oneself in a beautiful melody.
+                knowledge truly is. And it taught me joy, the incomparable joy
+                of losing oneself in a beautiful melody.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -75,7 +75,7 @@ const FoundersMessage = () => {
                 Ramani Varahabhatla
               </p>
               <p className="text-muted-foreground">
-                Founder & Principal Instructor, Skanda Music Academy
+                Founder & Lead Instructor, Skanda Music Academy
               </p>
             </div>
           </div>
