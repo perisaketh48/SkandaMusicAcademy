@@ -459,7 +459,10 @@ const Gallery = () => {
         <div ref={scrollRef} className="overflow-x-hidden">
           <div className="flex gap-6 w-max pr-10">
             {infinitePairs.map((pair, colIndex) => (
-              <div key={colIndex} className="flex flex-col gap-4 min-w-[280px]">
+              <div
+                key={colIndex}
+                className="flex flex-col gap-4 w-[280px] shrink-0"
+              >
                 {pair.map((item, i) => {
                   const Icon = categoryIcons[item.category] || Music;
                   const isLarge = i === 0;
@@ -472,14 +475,16 @@ const Gallery = () => {
                           galleryItems.findIndex((g) => g.id === item.id)
                         )
                       }
-                      className={`relative rounded-2xl overflow-hidden cursor-pointer
-                        border border-border hover:border-gold/40
-                        ${isLarge ? "h-[340px]" : "h-[160px]"}`}
+                      className={`relative rounded-2xl overflow-hidden cursor-pointer border border-border hover:border-gold/40 ${
+                        isLarge ? "aspect-[4/5]" : "aspect-[5/4]"
+                      }`}
                     >
                       <img
                         src={item.image}
-                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                        alt={item.title}
+                        className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-110"
                       />
+
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
                       <div className="absolute bottom-4 left-4">
                         <Badge className="bg-background/90 text-primary mb-2">

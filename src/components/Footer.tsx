@@ -119,11 +119,33 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
-          <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Skanda Music Academy. All rights
-            reserved.
-          </p>
+        <div className="mt-14 pt-8 border-t border-primary-foreground/20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            {/* Copyright */}
+            <p className="text-primary-foreground/70 text-sm tracking-wide">
+              © {new Date().getFullYear()}{" "}
+              <span className="font-semibold text-gold">
+                Skanda Music Academy
+              </span>
+              . All rights reserved.
+            </p>
+
+            {/* Developer Credit */}
+            <p className="text-primary-foreground/70 text-sm flex items-center gap-2">
+              <span className="opacity-80">Designed & Developed with</span>
+              <span className="text-gold">♪</span>
+              <a
+                href="https://saketh-peri-13.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative font-semibold text-gold group"
+              >
+                Saketh Peri
+                {/* animated underline */}
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-gold to-accent transition-all duration-300 group-hover:w-full" />
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
