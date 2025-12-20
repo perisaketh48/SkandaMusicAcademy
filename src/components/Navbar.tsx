@@ -12,8 +12,6 @@ const Navbar = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/courses", label: "Courses" },
-    // { to: "/pricing", label: "Pricing" },
-    // { to: "/slots", label: "Slot Availability" },
     { to: "/demo", label: "Demo Class" },
     { to: "/contact", label: "Contact" },
   ];
@@ -21,10 +19,10 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-white backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+          {/* LOGO */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-primary via-accent to-gold flex items-center justify-center shadow-gold group-hover:scale-105 transition-transform">
               <Music2 className="h-5 w-5 lg:h-6 lg:w-6 text-primary-foreground" />
@@ -39,8 +37,8 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center gap-1">
+          {/* DESKTOP NAV (≥1024px) */}
+          <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -57,8 +55,8 @@ const Navbar = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden xl:block">
+          {/* CTA */}
+          <div className="hidden lg:block">
             <Button
               asChild
               className="bg-gradient-to-r from-gold via-accent to-gold hover:shadow-gold font-semibold"
@@ -67,9 +65,9 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* MOBILE MENU BUTTON (<1024px) */}
           <button
-            className="xl:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -81,9 +79,9 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* MOBILE NAV */}
         {isMenuOpen && (
-          <nav className="xl:hidden py-4 border-t border-border fade-in-up">
+          <nav className="lg:hidden py-4 border-t border-border fade-in-up">
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link
@@ -100,6 +98,7 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+
               <Button
                 asChild
                 className="bg-gradient-to-r from-gold via-accent to-gold mt-4"
