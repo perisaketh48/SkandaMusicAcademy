@@ -413,7 +413,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-10">
