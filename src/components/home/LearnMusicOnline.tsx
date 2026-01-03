@@ -110,7 +110,7 @@ const LearnMusicOnline = () => {
           {/* LEFT CONTENT */}
           <div className="fade-in-up">
             {/* Always visible intro (UNCHANGED) */}
-            <p className="text-primary-foreground/90 leading-relaxed text-lg mb-4">
+            <p className="text-primary-foreground/85 leading-relaxed mb-4">
               Carnatic music is celebrated for its depth, precision, and
               spiritual richness. Its intricate melodies and rhythmic structures
               form the foundation of many classical and modern musical forms.

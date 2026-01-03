@@ -281,3 +281,143 @@
     0 100%
   );
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 45s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 45s linear infinite;
+}
+
+/* ================= FILM STRIP ================= */
+
+.film-strip {
+  position: relative;
+  background: #111;
+  padding: 28px 0;
+  overflow: hidden;
+}
+
+/* perforation */
+.film-strip::before,
+.film-strip::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background: repeating-linear-gradient(
+    to right,
+    #111 0px,
+    #111 14px,
+    transparent 14px,
+    transparent 26px
+  );
+  z-index: 10;
+}
+
+.film-strip::before {
+  top: 0;
+}
+.film-strip::after {
+  bottom: 0;
+}
+
+.film-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+/* film frame */
+.film-frame {
+  position: relative;
+  min-width: 280px;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: black;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* play button */
+.play-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+.film-frame:hover .play-button {
+  transform: scale(1.1);
+}
+
+/* animations */
+@keyframes film-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes film-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-film-left {
+  animation: film-left 45s linear infinite;
+}
+.animate-film-right {
+  animation: film-right 45s linear infinite;
+}
+
+.film-strip:hover .animate-film-left,
+.film-strip:hover .animate-film-right {
+  animation-play-state: paused;
+}
+
+/* modal close */
+.modal-close {
+  padding: 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}

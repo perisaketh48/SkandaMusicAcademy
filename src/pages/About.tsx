@@ -276,7 +276,7 @@
 
 // export default About;
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Award, Users, Heart, BookOpen, Music2 } from "lucide-react";
 
 import PageLayout from "@/components/layout/PageLayout";
@@ -288,6 +288,14 @@ import VisionMissionSection from "@/components/home/VisionSection";
 
 const About = () => {
   const founderRef = useRef(null);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto", // instant scroll on page load
+    });
+  }, []);
 
   const values = [
     {
@@ -428,20 +436,17 @@ const About = () => {
 
               <div className="space-y-6 text-muted-foreground leading-relaxed text-[1.05rem]">
                 <p>
-                  Skanda Music Academy was created with the belief that Carnatic
-                  music is a sacred discipline, one that nurtures devotion,
-                  inner strength, and self-expression.
-                </p>
-
-                <p>
-                  Every student’s journey is unique. My role as a teacher is to
-                  guide with patience, clarity, and warmth, while honoring the
-                  timeless values of our tradition.
-                </p>
-
-                <p>
-                  I invite you to explore this beautiful journey where music
-                  becomes a lifelong companion.
+                  Namaste and welcome to <b>Skanda Music Academy</b>,
+                  <br /> Music has been a guiding force in my life, shaping my
+                  confidence, expression, and joy. Through my journey as a
+                  student and teacher of Carnatic music, I realized that while
+                  the art form is deeply traditional, the way it is taught can
+                  be more personal, engaging, and nurturing. Skanda Music
+                  Academy was born from this belief, to create a learning space
+                  that blends devotion, strong foundations, and modern teaching
+                  with individual attention. Every student here is guided with
+                  patience, care, and respect for their unique musical journey,
+                  so music becomes not just a skill, but a lifelong companion.
                 </p>
               </div>
 

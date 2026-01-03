@@ -18,7 +18,7 @@ const HomeMissionVisionPreview = () => {
       >
         {" "}
         <SectionHeading
-          title="Our Mission & Vision"
+          title="Introduction"
           subtitle="Rooted in tradition. Guided by devotion."
           className="mb-6"
         />

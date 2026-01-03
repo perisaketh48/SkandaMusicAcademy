@@ -11,6 +11,7 @@ import Courses from "./pages/Courses";
 import DemoClass from "./pages/DemoClass";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Gallery from "./pages/Gallery";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +25,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
-          {/* <Route path="/pricing" element={<Pricing />} /> */}
+          <Route path="/gallery" element={<Gallery />} />
           {/* <Route path="/slots" element={<Slots />} /> */}
           <Route path="/demo" element={<DemoClass />} />
           <Route path="/contact" element={<Contact />} />

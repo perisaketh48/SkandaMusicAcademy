@@ -5,7 +5,7 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import WhatMakesUsDifferent from "@/components/home/WhatMakesUsDifferent";
 import LearnMusicOnline from "@/components/home/LearnMusicOnline";
 import CTASection from "@/components/home/CTASection";
-import Gallery from "@/components/home/Gallery";
+// import Gallery from "@/pages/Gallery";
 import HomeMissionVisionPreview from "./../components/home/HomeMissionVisionPreview";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
-      <Gallery />
+      {/* <Gallery /> */}
       <HomeMissionVisionPreview />
       <WhyChooseUs />
       <WhatMakesUsDifferent />
