@@ -48,12 +48,7 @@ const Contact = () => {
       details: "+91 98765 43210",
       subtext: "Mon-Sat, 9 AM - 7 PM IST",
     },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: "Hyderabad, India",
-      subtext: "In-person classes available",
-    },
+
     {
       icon: Clock,
       title: "Working Hours",
@@ -72,7 +67,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-center">
             {contactInfo.map((info, i) => (
               <div
                 key={i}

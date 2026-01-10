@@ -13,7 +13,7 @@ const FoundersMessage = () => {
                 Namaste and welcome to Skanda Music Academy.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6 ">
                 Growing up, music shaped my life in countless positive ways. It
                 taught me discipline when I had to practice the same phrase
                 repeatedly until it was perfect. It taught me patience when
