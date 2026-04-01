@@ -25,17 +25,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-primary via-accent to-gold flex items-center justify-center shadow-gold group-hover:scale-105 transition-transform">
-              <Music2 className="h-5 w-5 lg:h-6 lg:w-6 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-lg lg:text-xl text-gradient-warm">
-                Skanda
-              </span>
-              <span className="text-xs text-muted-foreground -mt-1">
-                Music Academy
-              </span>
-            </div>
+            <img
+              src="/logo2.svg"
+              alt="Skanda Logo"
+              className="w-auto h-20  object-contain"
+            />
           </Link>
 
           {/* DESKTOP NAV (≥1024px) */}
@@ -48,7 +42,7 @@ const Navbar = () => {
                   "px-4 py-2 rounded-full text-sm font-medium transition-all duration-300",
                   isActive(link.to)
                     ? "bg-primary text-primary-foreground shadow-md"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted",
                 )}
               >
                 {link.label}
@@ -92,7 +86,7 @@ const Navbar = () => {
                     "px-4 py-3 rounded-lg text-base font-medium transition-all",
                     isActive(link.to)
                       ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted",
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
