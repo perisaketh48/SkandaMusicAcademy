@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Music2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -22,17 +22,18 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        {/* NAVBAR ROW */}
+        <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
           {/* LOGO */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center shrink-0">
             <img
               src="/logo2.svg"
               alt="Skanda Logo"
-              className="w-auto h-20  object-contain"
+              className="h-[3rem] lg:h-[4rem] w-auto object-contain"
             />
           </Link>
 
-          {/* DESKTOP NAV (≥1024px) */}
+          {/* DESKTOP NAV */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
@@ -60,9 +61,9 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* MOBILE MENU BUTTON (<1024px) */}
+          {/* MOBILE MENU BUTTON */}
           <button
-            className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -76,7 +77,7 @@ const Navbar = () => {
 
         {/* MOBILE NAV */}
         {isMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-border fade-in-up">
+          <nav className="lg:hidden py-4 border-t border-border animate-in slide-in-from-top duration-300">
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link
