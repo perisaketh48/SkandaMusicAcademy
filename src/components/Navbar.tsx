@@ -20,16 +20,16 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border">
+    <header className="sticky top-0 z-50 h-[4rem] lg:h-[5.7rem] bg-white ">
       <div className="container mx-auto px-4 lg:px-8">
         {/* NAVBAR ROW */}
         <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
           {/* LOGO */}
           <Link to="/" className="flex items-center shrink-0">
             <img
-              src="/logo2.svg"
+              src="/Assets/Skanda_logo1.png"
               alt="Skanda Logo"
-              className="h-[3rem] lg:h-[4rem] w-auto object-contain"
+              className="h-[4rem] lg:h-[6rem] w-auto object-contain"
             />
           </Link>
 
