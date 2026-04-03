@@ -11,14 +11,8 @@ const HeroSection = () => {
         <img
           src="/Assets/images/hero_section.png"
           alt="Carnatic music teaching"
-          className="w-full h-full object-cover scale-100"
+          className="w-full h-full object-cover scale-100 opacity-75"
         />
-
-        {/* cinematic dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0D2137]/70 via-[#0D2137]/50 to-[#0D2137]/80" />
-
-        {/* subtle blue accent light */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#1E90FF]/25 via-transparent to-[#1E90FF]/15" />
       </div>
 
       {/* ---------- ORGANIC EDGE MASKS ---------- */}
@@ -31,13 +25,13 @@ const HeroSection = () => {
       {/* ---------- CONTENT ---------- */}
       <div className="relative z-30 min-h-[90vh] sm:min-h-[100vh] flex items-center">
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 sm:mb-6 drop-shadow-xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-black leading-tight mb-4 sm:mb-6 drop-shadow-xl">
             Learn the Tradition.
             <br className="hidden sm:block" />
-            <span className="text-[#ffffff]">Live the Music.</span>
+            <span className="text-[#000000]">Live the Music.</span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/85 mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
+          <p className="text-base sm:text-lg md:text-xl text-[#222] font-bold mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
             To inspire every learner to discover their voice, honour tradition,
             and grow through the soulful journey of Carnatic music.
           </p>
@@ -61,7 +55,7 @@ const HeroSection = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-white/40 text-white font-extrabold bg-white/5 hover:bg-white/15 backdrop-blur-sm px-8 py-6 transition-all duration-200"
+              className="border-black/40 text-black font-extrabold bg-black/5 hover:bg-black/15 backdrop-blur-sm px-8 py-6 transition-all duration-200"
             >
               <Link to="/about">Explore the Academy</Link>
             </Button>
