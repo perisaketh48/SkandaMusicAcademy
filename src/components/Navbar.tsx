@@ -37,7 +37,7 @@ const Navbar = () => {
         "sticky top-0 z-50 w-full transition-all duration-300 bg-white",
         scrolled
           ? "shadow-[0_2px_20px_rgba(18,86,153,0.08)] border-b border-border/50"
-          : "border-b border-transparent"
+          : "border-b border-transparent",
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +48,7 @@ const Navbar = () => {
             <img
               src="/Assets/Skanda_logo5.png"
               alt="Skanda Logo"
-              className="h-14 sm:h-16 lg:h-[5.5rem] w-auto object-contain"
+              className="h-14 sm:h-16 lg:h-[5rem] w-auto object-contain"
             />
           </Link>
 
@@ -101,7 +101,7 @@ const Navbar = () => {
           "lg:hidden fixed inset-x-0 top-[4rem] sm:top-[4.5rem] bottom-0 bg-white z-50 transition-all duration-300 ease-in-out",
           isMenuOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
-            : "opacity-0 -translate-y-4 pointer-events-none"
+            : "opacity-0 -translate-y-4 pointer-events-none",
         )}
       >
         <nav className="container mx-auto px-4 sm:px-6 py-6">
