@@ -75,7 +75,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+91 98765 43210",
+      details: "+61 434 426 619",
       subtext: "Mon-Sat, 9 AM - 7 PM IST",
     },
     {

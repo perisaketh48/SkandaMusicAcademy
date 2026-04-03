@@ -147,7 +147,7 @@ const VisionMissionSection = () => {
 
                   <p>
                     At Skanda Music Academy, our vision is:
-                    <b className="text-gradient-warm ml-2">
+                    <b className=”text-[#3BA0FF] ml-2”>
                       “To make Carnatic music a lifelong companion of beauty,
                       devotion, and inner growth.”
                     </b>
