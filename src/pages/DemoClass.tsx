@@ -6,6 +6,7 @@ import {
   Video,
   MessageCircle,
   Calendar,
+  Loader2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,9 +16,12 @@ import PageLayout from "@/components/layout/PageLayout";
 import PageHero from "@/components/layout/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { useToast } from "@/hooks/use-toast";
+import { sendDemoBookingEmail } from "@/lib/emailjs";
 
 const DemoClass = () => {
   const { toast } = useToast();
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,21 +31,59 @@ const DemoClass = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Demo Class Request Submitted!",
-      description:
-        "We'll contact you within 24 hours to confirm your demo class timing.",
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      experience: "",
-      preferredTime: "",
-      message: "",
-    });
+
+    // Validate required fields
+    if (!formData.name.trim() || !formData.email.trim()) {
+      toast({
+        title: "Please fill required fields",
+        description: "Name and email are required to book a demo class.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid email address",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setSending(true);
+
+    try {
+      await sendDemoBookingEmail(formData);
+      setSent(true);
+      toast({
+        title: "Demo Class Request Submitted!",
+        description: "We'll contact you within 24 hours to confirm your demo class timing.",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        experience: "",
+        preferredTime: "",
+        message: "",
+      });
+
+      // Reset sent state after 5 seconds
+      setTimeout(() => setSent(false), 5000);
+    } catch {
+      toast({
+        title: "Failed to submit request",
+        description: "Something went wrong. Please try again or email us at info.skandamusicacademy@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleChange = (
@@ -86,26 +128,26 @@ const DemoClass = () => {
       />
 
       {/* Benefits */}
-      <section className="py-20 bg-background">
+      <section className="py-14 sm:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="What to Expect"
             subtitle="Your free demo class is designed to give you a complete picture of learning with us"
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {benefits.map((benefit, i) => (
               <div
                 key={i}
-                className="bg-card rounded-2xl p-6 border border-border text-center hover:border-gold/40 hover-glow fade-in-up"
+                className="bg-card rounded-2xl p-5 sm:p-6 border border-border text-center hover:border-primary/20 hover-glow fade-in-up"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-gold/10 flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="h-7 w-7 text-primary" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/8 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <benefit.icon className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
                 </div>
-                <h3 className="font-serif text-lg font-semibold text-gradient-warm mb-2">
+                <h3 className="font-serif text-base sm:text-lg font-semibold text-foreground mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -115,7 +157,7 @@ const DemoClass = () => {
       </section>
 
       {/* Booking Form */}
-      <section className="py-20 bg-[#f6faff]">
+      <section className="py-14 sm:py-20 bg-[#f6faff]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <SectionHeading
@@ -123,9 +165,9 @@ const DemoClass = () => {
               subtitle="Fill out the form below and we'll get back to you within 24 hours"
             />
 
-            <div className="bg-card rounded-2xl p-8 border border-border shadow-elegant">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl p-5 sm:p-8 border border-border shadow-elegant">
+              <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name *</Label>
                     <Input
@@ -135,7 +177,8 @@ const DemoClass = () => {
                       onChange={handleChange}
                       placeholder="Your full name"
                       required
-                      className="border-border focus:border-gold"
+                      disabled={sending}
+                      className="border-border focus:border-primary focus:ring-primary/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -148,12 +191,13 @@ const DemoClass = () => {
                       onChange={handleChange}
                       placeholder="your@email.com"
                       required
-                      className="border-border focus:border-gold"
+                      disabled={sending}
+                      className="border-border focus:border-primary focus:ring-primary/20"
                     />
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
                     <Input
@@ -162,7 +206,8 @@ const DemoClass = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+1 (123) 456-7890"
-                      className="border-border focus:border-gold"
+                      disabled={sending}
+                      className="border-border focus:border-primary focus:ring-primary/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -172,7 +217,8 @@ const DemoClass = () => {
                       name="experience"
                       value={formData.experience}
                       onChange={handleChange}
-                      className="w-full h-10 px-3 rounded-md border border-border bg-background text-foreground focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
+                      disabled={sending}
+                      className="w-full h-10 px-3 rounded-md border border-border bg-background text-foreground text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:opacity-50"
                     >
                       <option value="">Select your level</option>
                       <option value="beginner">Complete Beginner</option>
@@ -190,13 +236,12 @@ const DemoClass = () => {
                     name="preferredTime"
                     value={formData.preferredTime}
                     onChange={handleChange}
-                    className="w-full h-10 px-3 rounded-md border border-border bg-background text-foreground focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
+                    disabled={sending}
+                    className="w-full h-10 px-3 rounded-md border border-border bg-background text-foreground text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:opacity-50"
                   >
                     <option value="">Select preferred time</option>
                     <option value="morning">Morning (6 AM - 10 AM IST)</option>
-                    <option value="afternoon">
-                      Afternoon (12 PM - 4 PM IST)
-                    </option>
+                    <option value="afternoon">Afternoon (12 PM - 4 PM IST)</option>
                     <option value="evening">Evening (5 PM - 9 PM IST)</option>
                     <option value="flexible">Flexible / Contact me</option>
                   </select>
@@ -211,16 +256,32 @@ const DemoClass = () => {
                     onChange={handleChange}
                     placeholder="Tell us about your musical interests or any specific questions..."
                     rows={4}
-                    className="border-border focus:border-gold resize-none"
+                    disabled={sending}
+                    className="border-border focus:border-primary focus:ring-primary/20 resize-none"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73] hover:shadow-gold text-base font-semibold py-6"
+                  disabled={sending}
+                  className="w-full bg-primary hover:bg-primary/90 text-white text-base font-semibold py-6 transition-all duration-200"
                 >
-                  <CheckCircle2 className="mr-2 h-5 w-5" />
-                  Request Demo Class
+                  {sending ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : sent ? (
+                    <>
+                      <CheckCircle2 className="mr-2 h-5 w-5" />
+                      Submitted Successfully!
+                    </>
+                  ) : (
+                    <>
+                      <CheckCircle2 className="mr-2 h-5 w-5" />
+                      Request Demo Class
+                    </>
+                  )}
                 </Button>
               </form>
             </div>
@@ -229,15 +290,15 @@ const DemoClass = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="py-20 bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73]">
+      <section className="py-14 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <blockquote className="max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl font-serif text-white mb-6 italic">
+            <p className="text-lg sm:text-xl md:text-2xl font-serif text-white mb-4 sm:mb-6 italic px-2">
               "The demo class completely changed my perspective on learning
               Carnatic music. The personalized attention and structured approach
               convinced me this was the right place for my musical journey."
             </p>
-            <footer className="text-white/70">
+            <footer className="text-white/70 text-sm sm:text-base">
               Priya K., Student from California
             </footer>
           </blockquote>
