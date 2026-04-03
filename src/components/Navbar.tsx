@@ -46,7 +46,7 @@ const Navbar = () => {
           {/* LOGO */}
           <Link to="/" className="flex items-center shrink-0">
             <img
-              src="/Assets/Skanda_logo4.png"
+              src="/Assets/Skanda_logo5.png"
               alt="Skanda Logo"
               className="h-14 sm:h-16 lg:h-[5.5rem] w-auto object-contain"
             />
