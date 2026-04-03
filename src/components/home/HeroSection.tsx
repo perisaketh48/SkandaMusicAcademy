@@ -34,7 +34,12 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 sm:mb-6 drop-shadow-xl">
             Learn the Tradition.
             <br className="hidden sm:block" />
-            <span className="text-[#1E90FF]"> Live the Music.</span>
+            <span
+              className="text-[#1E90FF] "
+              style={{ WebkitTextStroke: "2px #FFFFFF" }}
+            >
+              Live the Music.
+            </span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-white/85 mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
