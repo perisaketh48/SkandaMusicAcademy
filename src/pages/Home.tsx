@@ -5,7 +5,8 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import WhatMakesUsDifferent from "@/components/home/WhatMakesUsDifferent";
 import LearnMusicOnline from "@/components/home/LearnMusicOnline";
 import CTASection from "@/components/home/CTASection";
-// import Gallery from "@/pages/Gallery";
+import QuickNav from "@/components/QuickNav";
+import BackToTop from "@/components/BackToTop";
 import HomeMissionVisionPreview from "./../components/home/HomeMissionVisionPreview";
 
 const Home = () => {
@@ -13,13 +14,14 @@ const Home = () => {
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
-      {/* <Gallery /> */}
       <HomeMissionVisionPreview />
       <WhyChooseUs />
       <WhatMakesUsDifferent />
       <LearnMusicOnline />
+      <QuickNav />
       <CTASection />
       <Footer />
+      <BackToTop />
     </div>
   );
 };
