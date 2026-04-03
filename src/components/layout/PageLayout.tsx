@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import QuickNav from "@/components/QuickNav";
 import BackToTop from "@/components/BackToTop";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       <QuickNav />
       <Footer />
       <BackToTop />
+      <WhatsAppButton />
     </div>
   );
 };

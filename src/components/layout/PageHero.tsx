@@ -9,13 +9,13 @@ interface PageHeroProps {
 
 const PageHero = ({ title, subtitle, children }: PageHeroProps) => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73] py-16 sm:py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#0a1628] via-[#1877F2] to-[#0a52c2] py-16 sm:py-20 lg:py-28">
       <FloatingMusicNotes count={8} />
 
       {/* Subtle depth elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-[#1E90FF] rounded-full blur-[80px] floating-animation"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#3BA0FF] rounded-full blur-[100px] floating-animation" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute top-10 left-10 w-32 h-32 bg-[#1877F2] rounded-full blur-[80px] floating-animation"></div>
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#42a5f5] rounded-full blur-[100px] floating-animation" style={{ animationDelay: "1s" }}></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">

@@ -7,6 +7,7 @@ import LearnMusicOnline from "@/components/home/LearnMusicOnline";
 import CTASection from "@/components/home/CTASection";
 import QuickNav from "@/components/QuickNav";
 import BackToTop from "@/components/BackToTop";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import HomeMissionVisionPreview from "./../components/home/HomeMissionVisionPreview";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <CTASection />
       <Footer />
       <BackToTop />
+      <WhatsAppButton />
     </div>
   );
 };
