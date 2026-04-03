@@ -15,10 +15,10 @@ const HeroSection = () => {
         />
 
         {/* cinematic dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/70 via-[#0a1628]/50 to-[#0a1628]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D2137]/70 via-[#0D2137]/50 to-[#0D2137]/80" />
 
         {/* subtle blue accent light */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#1877F2]/25 via-transparent to-[#1877F2]/15" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#1E90FF]/25 via-transparent to-[#1E90FF]/15" />
       </div>
 
       {/* ---------- ORGANIC EDGE MASKS ---------- */}
@@ -34,7 +34,7 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 sm:mb-6 drop-shadow-xl">
             Learn the Tradition.
             <br className="hidden sm:block" />
-            <span className="text-[#1877F2]"> Live the Music.</span>
+            <span className="text-[#1E90FF]"> Live the Music.</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-white/85 mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
@@ -46,7 +46,7 @@ const HeroSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-[#1877F2] text-white hover:bg-[#1565c0]
+              className="bg-[#1E90FF] text-white hover:bg-[#1a7ee0]
                          shadow-[0_12px_40px_rgba(30,144,255,0.35)]
                          hover:shadow-[0_16px_50px_rgba(30,144,255,0.45)]
                          text-base font-semibold px-8 py-6 transition-all duration-200"
