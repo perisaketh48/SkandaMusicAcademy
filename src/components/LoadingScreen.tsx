@@ -35,7 +35,8 @@ const LoadingScreen = ({ onFinished }: LoadingScreenProps) => {
         playsInline
         onEnded={handleVideoEnd}
         onError={handleError}
-        className="w-500 h-500 object-contain max-w-[90vw] max-h-[90vh]"
+        className="w-[500px] h-[500px] object-contain"
+        style={{ background: "transparent" }}
       />
     </div>
   );
