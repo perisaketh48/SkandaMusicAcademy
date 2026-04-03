@@ -47,5 +47,3 @@ const LoadingScreen = ({ onFinished }: LoadingScreenProps) => {
 };
 
 export default LoadingScreen;
-
-// test
