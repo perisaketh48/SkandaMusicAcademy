@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0a1628] text-white">
+    <footer className="bg-[#0D2137] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand with Logo */}
@@ -44,7 +44,7 @@ const Footer = () => {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="text-white/60 hover:text-[#1877F2] transition-colors text-sm"
+                    className="text-white/60 hover:text-[#1E90FF] transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -60,25 +60,25 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <Mail className="h-4 w-4 text-[#1877F2] shrink-0 mt-0.5" />
+                <Mail className="h-4 w-4 text-[#1E90FF] shrink-0 mt-0.5" />
                 <a
                   href="mailto:info.skandamusicacademy@gmail.com"
-                  className="text-sm text-white/70 hover:text-[#1877F2] transition-colors"
+                  className="text-sm text-white/70 hover:text-[#1E90FF] transition-colors"
                 >
                   info.skandamusicacademy@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="h-4 w-4 text-[#1877F2] shrink-0 mt-0.5" />
+                <Phone className="h-4 w-4 text-[#1E90FF] shrink-0 mt-0.5" />
                 <a
                   href="tel:+61434426619"
-                  className="text-sm text-white/70 hover:text-[#1877F2] transition-colors"
+                  className="text-sm text-white/70 hover:text-[#1E90FF] transition-colors"
                 >
                   +61 434 426 619
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-[#1877F2] shrink-0 mt-0.5" />
+                <MapPin className="h-4 w-4 text-[#1E90FF] shrink-0 mt-0.5" />
                 <span className="text-sm text-white/70">
                   Werribee VIC, Australia
                 </span>
@@ -102,7 +102,7 @@ const Footer = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#1877F2] transition-all duration-200"
+                  className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#1E90FF] transition-all duration-200"
                   aria-label={label}
                 >
                   <Icon className="h-4 w-4" />
@@ -138,7 +138,7 @@ const Footer = () => {
                 href="https://saketh-peri-13.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#1877F2] hover:text-[#42a5f5] font-medium transition-colors"
+                className="text-[#1E90FF] hover:text-[#3BA0FF] font-medium transition-colors"
               >
                 Saketh Peri
               </a>

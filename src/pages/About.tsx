@@ -367,8 +367,8 @@ const About = () => {
                 />
 
                 {/* OVERLAY */}
-                <div className="absolute inset-0 bg-[#0a1628]/60" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1877F2]/30 via-transparent to-[#1877F2]/20" />
+                <div className="absolute inset-0 bg-[#0D2137]/60" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1E90FF]/30 via-transparent to-[#1E90FF]/20" />
 
                 {/* CONTENT */}
                 <div className="relative z-10 p-6 sm:p-10">
@@ -404,14 +404,14 @@ const About = () => {
             <div className="lg:col-span-4 flex justify-center fade-in-up">
               <div className="relative inline-block">
                 {/* Soft glow - hidden on mobile to avoid overflow */}
-                <div className="hidden sm:block absolute -inset-4 rounded-full bg-gradient-to-br from-[#1877F2]/20 via-[#1877F2]/15 to-[#0a52c2]/15 blur-2xl opacity-30" />
+                <div className="hidden sm:block absolute -inset-4 rounded-full bg-gradient-to-br from-[#1E90FF]/20 via-[#1E90FF]/15 to-[#0D3F73]/15 blur-2xl opacity-30" />
 
                 {/* Frame */}
                 <div className="relative p-1.5 sm:p-2 rounded-full bg-white shadow-[0_10px_30px_-10px_rgba(18,86,153,0.2)] sm:shadow-[0_20px_50px_-15px_rgba(18,86,153,0.25)]">
                   <img
                     src="/Assets/images/14.jpg"
                     alt="Founder of Skanda Music Academy"
-                    className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover ring-2 sm:ring-3 ring-[#1877F2]/20"
+                    className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover ring-2 sm:ring-3 ring-[#1E90FF]/20"
                   />
                 </div>
               </div>
@@ -426,7 +426,7 @@ const About = () => {
               />
 
               {/* Divider */}
-              <div className="w-20 h-[2px] bg-gradient-to-r from-[#1877F2] to-[#1877F2] rounded-full" />
+              <div className="w-20 h-[2px] bg-gradient-to-r from-[#1E90FF] to-[#1E90FF] rounded-full" />
 
               <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed text-sm sm:text-[1.05rem]">
                 <p>
@@ -486,14 +486,14 @@ const About = () => {
             <div className="lg:col-span-1 flex justify-center fade-in-up">
               <div className="relative text-center inline-block">
                 {/* soft aura - hidden on mobile */}
-                <div className="hidden sm:block absolute -inset-6 rounded-full bg-gradient-to-br from-[#1877F2]/15 via-[#1877F2]/10 to-[#0a52c2]/10 blur-2xl opacity-30" />
+                <div className="hidden sm:block absolute -inset-6 rounded-full bg-gradient-to-br from-[#1E90FF]/15 via-[#1E90FF]/10 to-[#0D3F73]/10 blur-2xl opacity-30" />
 
                 {/* image frame */}
                 <div className="relative p-1.5 sm:p-2 rounded-full bg-white shadow-[0_8px_25px_-8px_rgba(18,86,153,0.2)] sm:shadow-[0_15px_40px_-12px_rgba(18,86,153,0.2)]">
                   <img
                     src="/Assets/images/11.jpg"
                     alt="Ramani Varahabhatla – Founder of Skanda Music Academy"
-                    className="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full object-cover object-top ring-2 ring-[#1877F2]/15"
+                    className="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full object-cover object-top ring-2 ring-[#1E90FF]/15"
                   />
                 </div>
 

@@ -5,13 +5,13 @@ import FloatingMusicNotes from "@/components/FloatingMusicNotes";
 
 const CTASection = () => {
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-br from-[#0a1628] via-[#1877F2] to-[#0a52c2] relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73] relative overflow-hidden">
       <FloatingMusicNotes count={8} />
 
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-64 h-64 bg-white rounded-full blur-[120px]" />
-        <div className="absolute bottom-10 left-10 w-48 h-48 bg-[#1877F2] rounded-full blur-[100px]" />
+        <div className="absolute bottom-10 left-10 w-48 h-48 bg-[#1E90FF] rounded-full blur-[100px]" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -27,7 +27,7 @@ const CTASection = () => {
           <Button
             asChild
             size="lg"
-            className="bg-[#1877F2] hover:bg-[#1565c0] text-white text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-200 py-6"
+            className="bg-[#1E90FF] hover:bg-[#1a7ee0] text-white text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-200 py-6"
           >
             <Link to="/demo">
               Book Your Free Demo

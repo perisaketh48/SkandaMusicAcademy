@@ -22,7 +22,7 @@ const LearnMusicOnline = () => {
   ];
 
   return (
-    <section className="py-14 sm:py-16 bg-gradient-to-br from-[#0a1628] via-[#1877F2] to-[#0a52c2] text-white relative overflow-hidden">
+    <section className="py-14 sm:py-16 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73] text-white relative overflow-hidden">
       <FloatingMusicNotes count={8} />
 
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-6 mx-auto text-center max-w-4xl fade-in-up px-4">
@@ -60,7 +60,7 @@ const LearnMusicOnline = () => {
             <div className="flex flex-col sm:w-[60%] lg:w-[50%]">
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="mb-6 inline-flex items-center gap-2 text-[#42a5f5] font-medium hover:text-[#60B5FF] transition"
+                className="mb-6 inline-flex items-center gap-2 text-[#3BA0FF] font-medium hover:text-[#60B5FF] transition"
               >
                 {expanded ? (
                   <>
@@ -76,7 +76,7 @@ const LearnMusicOnline = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-[#1877F2] hover:bg-white/90 font-semibold shadow-md"
+                className="bg-white text-[#1E90FF] hover:bg-white/90 font-semibold shadow-md"
               >
                 <Link to="/courses">
                   Explore Our Courses
@@ -94,7 +94,7 @@ const LearnMusicOnline = () => {
                 className="group flex items-start gap-3 p-3 sm:p-4 rounded-xl bg-white/8 backdrop-blur-sm border border-white/15 hover:bg-white/12 transition-all duration-300"
                 style={{ animationDelay: `${i * 0.08}s` }}
               >
-                <div className="mt-0.5 flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-[#1877F2]/25 text-[#42a5f5] shrink-0 group-hover:scale-110 transition-transform">
+                <div className="mt-0.5 flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-[#1E90FF]/25 text-[#3BA0FF] shrink-0 group-hover:scale-110 transition-transform">
                   <CheckCircle2 className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                 </div>
                 <p className="text-white/85 text-xs sm:text-sm leading-snug">
@@ -108,7 +108,7 @@ const LearnMusicOnline = () => {
         {/* Bottom Highlight Line */}
         <div className="mt-10 sm:mt-14 max-w-4xl mx-auto text-center fade-in-up">
           <div className="inline-flex items-center gap-2 text-white/80 text-sm sm:text-lg">
-            <Music className="h-4 w-4 sm:h-5 sm:w-5 text-[#42a5f5] animate-pulse" />
+            <Music className="h-4 w-4 sm:h-5 sm:w-5 text-[#3BA0FF] animate-pulse" />
             <span>
               Each class is tailored to the individual pace and progress of
               every student.

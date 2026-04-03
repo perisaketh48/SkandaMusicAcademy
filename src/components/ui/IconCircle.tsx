@@ -22,7 +22,7 @@ const IconCircle = ({ icon: Icon, size = "md", variant = "gradient", className }
   };
 
   const variantClasses = {
-    gradient: "bg-gradient-to-br from-[#0a52c2] to-[#1877F2] shadow-[0_6px_20px_rgba(24,119,242,0.3)]",
+    gradient: "bg-gradient-to-br from-[#0D3F73] to-[#1E90FF] shadow-[0_6px_20px_rgba(24,119,242,0.3)]",
     soft: "bg-primary/10",
   };
 

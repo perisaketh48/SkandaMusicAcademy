@@ -162,7 +162,7 @@ const Slots = () => {
       </section>
 
       {/* Book CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0a1628] via-[#1877F2] to-[#0a52c2]">
+      <section className="py-20 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
             Ready to Book Your Slot?

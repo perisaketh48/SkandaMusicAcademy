@@ -222,7 +222,7 @@ const Contact = () => {
             </div>
 
             <div className="slide-in-right">
-              <div className="bg-gradient-to-br from-[#0a1628] via-[#1877F2] to-[#0a52c2] rounded-2xl p-6 sm:p-8 lg:p-12 h-full flex flex-col justify-center">
+              <div className="bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73] rounded-2xl p-6 sm:p-8 lg:p-12 h-full flex flex-col justify-center">
                 <h3 className="text-xl sm:text-2xl font-serif font-bold text-white mb-5 sm:mb-6">
                   Why Choose Skanda Music Academy?
                 </h3>
@@ -239,7 +239,7 @@ const Contact = () => {
                       key={i}
                       className="flex items-center gap-3 text-white/85 text-sm sm:text-base"
                     >
-                      <div className="w-2 h-2 rounded-full bg-[#1877F2] shrink-0"></div>
+                      <div className="w-2 h-2 rounded-full bg-[#1E90FF] shrink-0"></div>
                       {item}
                     </li>
                   ))}
