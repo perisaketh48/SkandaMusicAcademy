@@ -290,7 +290,7 @@ const DemoClass = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="py-14 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73]">
+      <section className="py-14 sm:py-20 bg-gradient-to-br from-[#0a1628] via-[#1877F2] to-[#0a52c2]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <blockquote className="max-w-3xl mx-auto">
             <p className="text-lg sm:text-xl md:text-2xl font-serif text-white mb-4 sm:mb-6 italic px-2">

@@ -94,8 +94,8 @@ const VisionMissionSection = () => {
             alt="Carnatic music ambience"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#0D2137]/75" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#125699]/20 via-transparent to-[#1E90FF]/15" />
+          <div className="absolute inset-0 bg-[#0a1628]/75" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1877F2]/20 via-transparent to-[#1877F2]/15" />
         </div>
 
         {/* ---------- CONTENT ---------- */}
@@ -147,7 +147,7 @@ const VisionMissionSection = () => {
 
                   <p>
                     At Skanda Music Academy, our vision is:
-                    <b className=”text-[#3BA0FF] ml-2”>
+                    <b className="text-[#42a5f5] ml-2">
                       “To make Carnatic music a lifelong companion of beauty,
                       devotion, and inner growth.”
                     </b>
@@ -156,7 +156,7 @@ const VisionMissionSection = () => {
 
                 <button
                   onClick={() => setVisionExpanded(!visionExpanded)}
-                  className="mt-4 sm:mt-5 text-[#3BA0FF] font-semibold hover:text-[#60B5FF] transition-colors text-sm sm:text-base"
+                  className="mt-4 sm:mt-5 text-[#42a5f5] font-semibold hover:text-[#60B5FF] transition-colors text-sm sm:text-base"
                 >
                   {visionExpanded ? "Show Less" : "Read More"}
                 </button>
