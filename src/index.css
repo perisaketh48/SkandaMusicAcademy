@@ -15,16 +15,16 @@
     --primary: #125699;
     --primary-foreground: #ffffff;
 
-    --secondary: #1E90FF;
+    --secondary: #094a8b;
     --secondary-foreground: #ffffff;
 
-    --tertiary: #0D3F73;
+    --tertiary: #0d3f73;
     --tertiary-foreground: #ffffff;
 
-    --accent: #1E90FF;
+    --accent: #094a8b;
     --accent-foreground: #ffffff;
 
-    --gold: #3BA0FF;
+    --gold: #3ba0ff;
     --gold-foreground: #ffffff;
 
     --muted: #f0f5fb;
@@ -33,7 +33,7 @@
     --border: #d6e4f0;
     --input: #d6e4f0;
 
-    --ring: #1E90FF;
+    --ring: #094a8b;
   }
 
   .dark {
@@ -46,19 +46,19 @@
     --popover: #10243e;
     --popover-foreground: #e4edf6;
 
-    --primary: #1E90FF;
+    --primary: #094a8b;
     --primary-foreground: #ffffff;
 
-    --secondary: #0D3F73;
+    --secondary: #0d3f73;
     --secondary-foreground: #e4edf6;
 
     --tertiary: #1a7ee0;
     --tertiary-foreground: #e4edf6;
 
-    --accent: #3BA0FF;
+    --accent: #3ba0ff;
     --accent-foreground: #0b1a2d;
 
-    --gold: #3BA0FF;
+    --gold: #3ba0ff;
     --gold-foreground: #0b1a2d;
 
     --muted: #152e4a;
@@ -70,19 +70,19 @@
     --border: #1e3a5c;
     --input: #1e3a5c;
 
-    --ring: #1E90FF;
+    --ring: #094a8b;
 
     --sidebar-background: #0b1a2d;
     --sidebar-foreground: #e4edf6;
 
-    --sidebar-primary: #1E90FF;
+    --sidebar-primary: #094a8b;
     --sidebar-primary-foreground: #ffffff;
 
     --sidebar-accent: #152e4a;
     --sidebar-accent-foreground: #e4edf6;
 
     --sidebar-border: #1e3a5c;
-    --sidebar-ring: #1E90FF;
+    --sidebar-ring: #094a8b;
   }
 }
 
@@ -107,14 +107,15 @@
 
 @layer components {
   .text-gradient-warm {
-    background: linear-gradient(135deg, #0D3F73 0%, #125699 40%, #1E90FF 100%);
+    background: linear-gradient(135deg, #0d3f73 0%, #125699 40%, #26629f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .rangoli-pattern {
-    background-image: radial-gradient(
+    background-image:
+      radial-gradient(
         circle at 20% 80%,
         rgba(30, 144, 255, 0.08) 0%,
         transparent 50%
@@ -132,7 +133,8 @@
   }
 
   .shadow-elegant {
-    box-shadow: 0 20px 40px -12px rgba(18, 86, 153, 0.15),
+    box-shadow:
+      0 20px 40px -12px rgba(18, 86, 153, 0.15),
       0 8px 20px -8px rgba(30, 144, 255, 0.1);
   }
 
@@ -367,7 +369,8 @@
   border-radius: 6px;
   overflow: hidden;
   background: black;
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15),
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.15),
     0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
