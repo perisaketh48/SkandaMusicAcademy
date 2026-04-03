@@ -403,7 +403,7 @@ const About = () => {
             <div className="lg:col-span-4 flex justify-center fade-in-up">
               <div className="relative inline-block">
                 {/* Soft glow - hidden on mobile to avoid overflow */}
-                <div className="hidden sm:block absolute -inset-4 rounded-full bg-gradient-to-br from-[#1E90FF]/20 via-[#1E90FF]/15 to-[#0D3F73]/15 blur-2xl opacity-30" />
+                <div className="hidden sm:block absolute -inset-4 rounded-full bg-gradient-to-br from-[#1E90FF]/20 via-[#26629f]/15 to-[#0D3F73]/15 blur-2xl opacity-30" />
 
                 {/* Frame */}
                 <div className="relative p-1.5 sm:p-2 rounded-full bg-white shadow-[0_10px_30px_-10px_rgba(18,86,153,0.2)] sm:shadow-[0_20px_50px_-15px_rgba(18,86,153,0.25)]">
@@ -485,7 +485,7 @@ const About = () => {
             <div className="lg:col-span-1 flex justify-center fade-in-up">
               <div className="relative text-center inline-block">
                 {/* soft aura - hidden on mobile */}
-                <div className="hidden sm:block absolute -inset-6 rounded-full bg-gradient-to-br from-[#1E90FF]/15 via-[#1E90FF]/10 to-[#0D3F73]/10 blur-2xl opacity-30" />
+                <div className="hidden sm:block absolute -inset-6 rounded-full bg-gradient-to-br from-[#1E90FF]/15 via-[#26629f]/10 to-[#0D3F73]/10 blur-2xl opacity-30" />
 
                 {/* image frame */}
                 <div className="relative p-1.5 sm:p-2 rounded-full  ">

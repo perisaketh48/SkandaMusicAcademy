@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Clock, Send, Loader2, CheckCircle2 } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Send,
+  Loader2,
+  CheckCircle2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -26,7 +34,12 @@ const Contact = () => {
     e.preventDefault();
 
     // Basic validation
-    if (!formData.name.trim() || !formData.email.trim() || !formData.subject.trim() || !formData.message.trim()) {
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.subject.trim() ||
+      !formData.message.trim()
+    ) {
       toast({
         title: "Please fill all required fields",
         description: "Name, email, subject and message are required.",
@@ -42,7 +55,8 @@ const Contact = () => {
       setSent(true);
       toast({
         title: "Message Sent Successfully!",
-        description: "Thank you for reaching out. We'll respond within 24-48 hours.",
+        description:
+          "Thank you for reaching out. We'll respond within 24-48 hours.",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
 
@@ -51,7 +65,8 @@ const Contact = () => {
     } catch {
       toast({
         title: "Failed to send message",
-        description: "Something went wrong. Please try again or email us directly at info.skandamusicacademy@gmail.com",
+        description:
+          "Something went wrong. Please try again or email us directly at info.skandamusicacademy@gmail.com",
         variant: "destructive",
       });
     } finally {
@@ -60,7 +75,7 @@ const Contact = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -135,7 +150,10 @@ const Contact = () => {
               </p>
 
               <div className="bg-white rounded-2xl p-5 sm:p-8 border border-border shadow-elegant">
-                <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-5 sm:space-y-6"
+                >
                   <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Your Name *</Label>
@@ -222,7 +240,7 @@ const Contact = () => {
             </div>
 
             <div className="slide-in-right">
-              <div className="bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73] rounded-2xl p-6 sm:p-8 lg:p-12 h-full flex flex-col justify-center">
+              <div className="bg-gradient-to-br from-[#0D2137] via-[#26629f] to-[#0D3F73] rounded-2xl p-6 sm:p-8 lg:p-12 h-full flex flex-col justify-center">
                 <h3 className="text-xl sm:text-2xl font-serif font-bold text-white mb-5 sm:mb-6">
                   Why Choose Skanda Music Academy?
                 </h3>
@@ -249,9 +267,7 @@ const Contact = () => {
                     "The best time to start your musical journey is now. We're
                     here to guide you every step of the way."
                   </p>
-                  <p className="text-white/50 text-sm mt-2">
-                    The Skanda Team
-                  </p>
+                  <p className="text-white/50 text-sm mt-2">The Skanda Team</p>
                 </div>
               </div>
             </div>

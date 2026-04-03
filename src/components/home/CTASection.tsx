@@ -5,7 +5,7 @@ import FloatingMusicNotes from "@/components/FloatingMusicNotes";
 
 const CTASection = () => {
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73] relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#26629f] to-[#0D3F73] relative overflow-hidden">
       <FloatingMusicNotes count={8} />
 
       {/* Subtle pattern overlay */}

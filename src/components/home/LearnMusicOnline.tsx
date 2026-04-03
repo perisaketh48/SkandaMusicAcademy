@@ -22,7 +22,7 @@ const LearnMusicOnline = () => {
   ];
 
   return (
-    <section className="py-14 sm:py-16 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73] text-white relative overflow-hidden">
+    <section className="py-14 sm:py-16 bg-gradient-to-br from-[#0D2137] via-[#26629f] to-[#0D3F73] text-white relative overflow-hidden">
       <FloatingMusicNotes count={8} />
 
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-6 mx-auto text-center max-w-4xl fade-in-up px-4">

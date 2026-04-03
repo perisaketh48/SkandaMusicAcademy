@@ -73,9 +73,7 @@ const Slots = () => {
                 <div className="bg-gradient-to-r from-primary to-accent p-4">
                   <div className="flex items-center gap-3">
                     <Calendar className="h-5 w-5 text-white" />
-                    <h3 className="font-serif font-bold text-white">
-                      {day}
-                    </h3>
+                    <h3 className="font-serif font-bold text-white">{day}</h3>
                   </div>
                 </div>
                 <div className="p-4 space-y-2">
@@ -162,7 +160,7 @@ const Slots = () => {
       </section>
 
       {/* Book CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73]">
+      <section className="py-20 bg-gradient-to-br from-[#0D2137] via-[#26629f] to-[#0D3F73]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
             Ready to Book Your Slot?

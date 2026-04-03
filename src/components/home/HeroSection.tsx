@@ -11,7 +11,7 @@ const HeroSection = () => {
         <img
           src="/Assets/images/hero_section.png"
           alt="Carnatic music teaching"
-          className="w-full h-full object-cover scale-105"
+          className="w-full h-full object-fit scale-x-[1]"
         />
 
         {/* cinematic dark overlay */}
@@ -61,7 +61,7 @@ const HeroSection = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-white/40 text-white bg-white/5 hover:bg-white/15 backdrop-blur-sm px-8 py-6 transition-all duration-200"
+              className="border-white/40 text-white font-extrabold bg-white/5 hover:bg-white/15 backdrop-blur-sm px-8 py-6 transition-all duration-200"
             >
               <Link to="/about">Explore the Academy</Link>
             </Button>

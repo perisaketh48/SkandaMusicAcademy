@@ -14,7 +14,7 @@ const QuickNav = () => {
   return (
     <section className="py-10 sm:py-14 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-center text-lg text-primary sm:text-xl font-serif font-semibold text-foreground mb-6 sm:mb-8">
+        <h3 className="text-center text-lg text-primary sm:text-xl font-serif font-semibold  mb-6 sm:mb-8">
           Explore Skanda Music Academy
         </h3>
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 sm:gap-4 max-w-3xl mx-auto">

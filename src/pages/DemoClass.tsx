@@ -62,7 +62,8 @@ const DemoClass = () => {
       setSent(true);
       toast({
         title: "Demo Class Request Submitted!",
-        description: "We'll contact you within 24 hours to confirm your demo class timing.",
+        description:
+          "We'll contact you within 24 hours to confirm your demo class timing.",
       });
       setFormData({
         name: "",
@@ -78,7 +79,8 @@ const DemoClass = () => {
     } catch {
       toast({
         title: "Failed to submit request",
-        description: "Something went wrong. Please try again or email us at info.skandamusicacademy@gmail.com",
+        description:
+          "Something went wrong. Please try again or email us at info.skandamusicacademy@gmail.com",
         variant: "destructive",
       });
     } finally {
@@ -89,7 +91,7 @@ const DemoClass = () => {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -241,7 +243,9 @@ const DemoClass = () => {
                   >
                     <option value="">Select preferred time</option>
                     <option value="morning">Morning (6 AM - 10 AM IST)</option>
-                    <option value="afternoon">Afternoon (12 PM - 4 PM IST)</option>
+                    <option value="afternoon">
+                      Afternoon (12 PM - 4 PM IST)
+                    </option>
                     <option value="evening">Evening (5 PM - 9 PM IST)</option>
                     <option value="flexible">Flexible / Contact me</option>
                   </select>
@@ -290,7 +294,7 @@ const DemoClass = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="py-14 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#1E90FF] to-[#0D3F73]">
+      <section className="py-14 sm:py-20 bg-gradient-to-br from-[#0D2137] via-[#26629f] to-[#0D3F73]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <blockquote className="max-w-3xl mx-auto">
             <p className="text-lg sm:text-xl md:text-2xl font-serif text-white mb-4 sm:mb-6 italic px-2">
