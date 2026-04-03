@@ -13,16 +13,16 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const Slots = () => {
   const timeSlots = [
-    { time: "6:00 AM - 7:00 AM", available: true, timezone: "IST" },
-    { time: "7:00 AM - 8:00 AM", available: false, timezone: "IST" },
-    { time: "8:00 AM - 9:00 AM", available: true, timezone: "IST" },
-    { time: "9:00 AM - 10:00 AM", available: true, timezone: "IST" },
-    { time: "10:00 AM - 11:00 AM", available: false, timezone: "IST" },
-    { time: "4:00 PM - 5:00 PM", available: true, timezone: "IST" },
-    { time: "5:00 PM - 6:00 PM", available: false, timezone: "IST" },
-    { time: "6:00 PM - 7:00 PM", available: true, timezone: "IST" },
-    { time: "7:00 PM - 8:00 PM", available: true, timezone: "IST" },
-    { time: "8:00 PM - 9:00 PM", available: false, timezone: "IST" },
+    { time: "8:00 AM - 9:00 AM", available: true, timezone: "AEST" },
+    { time: "9:00 AM - 10:00 AM", available: true, timezone: "AEST" },
+    { time: "10:00 AM - 11:00 AM", available: false, timezone: "AEST" },
+    { time: "11:00 AM - 12:00 PM", available: true, timezone: "AEST" },
+    { time: "3:00 PM - 4:00 PM", available: false, timezone: "AEST" },
+    { time: "4:00 PM - 5:00 PM", available: true, timezone: "AEST" },
+    { time: "5:00 PM - 6:00 PM", available: true, timezone: "AEST" },
+    { time: "6:00 PM - 7:00 PM", available: false, timezone: "AEST" },
+    { time: "7:00 PM - 8:00 PM", available: true, timezone: "AEST" },
+    { time: "8:00 PM - 9:00 PM", available: true, timezone: "AEST" },
   ];
 
   const days = [
@@ -48,7 +48,7 @@ const Slots = () => {
             <div className="inline-flex items-center gap-3 bg-gold/10 px-6 py-3 rounded-full">
               <Clock className="h-5 w-5 text-gold" />
               <span className="text-foreground font-medium">
-                All times displayed in Indian Standard Time (IST)
+                All times displayed in Australian Eastern Standard Time (AEST)
               </span>
             </div>
           </div>

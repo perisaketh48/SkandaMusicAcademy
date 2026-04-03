@@ -89,9 +89,9 @@ export async function sendDemoBookingEmail(data: DemoFormData): Promise<void> {
   };
 
   const timeLabels: Record<string, string> = {
-    morning: "Morning (6 AM - 10 AM IST)",
-    afternoon: "Afternoon (12 PM - 4 PM IST)",
-    evening: "Evening (5 PM - 9 PM IST)",
+    morning: "Morning (8 AM - 11 AM AEST)",
+    afternoon: "Afternoon (12 PM - 4 PM AEST)",
+    evening: "Evening (5 PM - 9 PM AEST)",
     flexible: "Flexible / Contact me",
   };
 

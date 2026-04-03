@@ -242,11 +242,9 @@ const DemoClass = () => {
                     className="w-full h-10 px-3 rounded-md border border-border bg-background text-foreground text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:opacity-50"
                   >
                     <option value="">Select preferred time</option>
-                    <option value="morning">Morning (6 AM - 10 AM IST)</option>
-                    <option value="afternoon">
-                      Afternoon (12 PM - 4 PM IST)
-                    </option>
-                    <option value="evening">Evening (5 PM - 9 PM IST)</option>
+                    <option value="morning">Morning (8 AM - 11 AM AEST)</option>
+                    <option value="afternoon">Afternoon (12 PM - 4 PM AEST)</option>
+                    <option value="evening">Evening (5 PM - 9 PM AEST)</option>
                     <option value="flexible">Flexible / Contact me</option>
                   </select>
                 </div>
