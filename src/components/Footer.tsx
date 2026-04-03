@@ -100,17 +100,17 @@ const Footer = () => {
                 {
                   icon: Facebook,
                   label: "Facebook",
-                  href: "https://www.facebook.com/skandamusicacademy",
+                  href: " https://www.facebook.com/share/1DZbztREQh/?mibextid=wwXIfr",
                 },
                 {
                   icon: Instagram,
                   label: "Instagram",
-                  href: "https://www.instagram.com/skandamusicacademy",
+                  href: "https://www.instagram.com/skanda_music_academy?igsh=MTAyam14eDl5bzE1bA%3D%3D&utm_source=qr",
                 },
                 {
                   icon: Youtube,
                   label: "YouTube",
-                  href: "https://www.youtube.com/@skandamusicacademy",
+                  href: " https://youtube.com/@ramanivarahabhatla3486?si=YP9oyszoVAdpKxTh",
                 },
               ].map(({ icon: Icon, label, href }) => (
                 <a

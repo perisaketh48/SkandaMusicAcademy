@@ -373,14 +373,13 @@ const About = () => {
                 {/* CONTENT */}
                 <div className="relative z-10 p-6 sm:p-10">
                   <div className="flex flex-col items-center text-center">
-                    <IconCircle
-                      icon={Music2}
-                      size="lg"
-                      variant="gradient"
-                      className="mb-6"
+                    <img
+                      src="/favicon.png"
+                      alt="Skanda Music Academy Logo"
+                      className="mb-6 w-20 h-20 object-contain p-1 bg-white rounded-full shadow-sm"
                     />
 
-                    <h3 className="text-2xl font-serif font-bold text-gradient-warm mb-4">
+                    <h3 className="text-2xl font-serif font-bold text-white mb-4">
                       Our Philosophy
                     </h3>
 

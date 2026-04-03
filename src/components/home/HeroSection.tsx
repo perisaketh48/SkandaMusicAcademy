@@ -46,7 +46,7 @@ const HeroSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-[#1E90FF] text-white hover:bg-[#1a7ee0]
+              className="bg-primary text-white hover:bg-primary/90 
                          shadow-[0_12px_40px_rgba(30,144,255,0.35)]
                          hover:shadow-[0_16px_50px_rgba(30,144,255,0.45)]
                          text-base font-semibold px-8 py-6 transition-all duration-200"
