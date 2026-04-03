@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               asChild
-              className="bg-gradient-to-r from-gold via-accent to-gold hover:shadow-gold font-semibold"
+              className="bg-gradient-to-r from-primary via-accent to-primary hover:shadow-gold font-semibold"
             >
               <Link to="/demo">Book Demo</Link>
             </Button>
@@ -97,7 +97,7 @@ const Navbar = () => {
 
               <Button
                 asChild
-                className="bg-gradient-to-r from-gold via-accent to-gold mt-4"
+                className="bg-gradient-to-r from-primary via-accent to-primary mt-4"
               >
                 <Link to="/demo" onClick={() => setIsMenuOpen(false)}>
                   Book Demo

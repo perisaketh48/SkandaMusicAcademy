@@ -5,7 +5,7 @@
 
 // const HeroSection = () => {
 //   return (
-//     <section className="relative min-h-[100vh] overflow-hidden bg-[radial-gradient(circle_at_top,_#3b1d12,_#120806_70%)] flex items-center">
+//     <section className="relative min-h-[100vh] overflow-hidden bg-[radial-gradient(circle_at_top,_#0f2744,_#060d18_70%)] flex items-center">
 //       {/* Floating musical particles */}
 //       <FloatingMusicNotes count={18} />
 
@@ -57,7 +57,7 @@
 //                   asChild
 //                   size="lg"
 //                   className="bg-gradient-to-r from-gold via-accent to-gold
-//                              hover:shadow-[0_0_40px_rgba(255,190,100,0.8)]
+//                              hover:shadow-[0_0_40px_rgba(30,144,255,0.8)]
 //                              transition-all duration-500 text-base font-semibold"
 //                 >
 //                   <Link to="/demo">
@@ -120,8 +120,8 @@ const HeroSection = () => {
         {/* cinematic dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
-        {/* warm musical light */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-gold/20 via-transparent to-accent/20" />
+        {/* blue musical light */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-accent/20" />
       </div>
 
       {/* ---------- ORGANIC EDGE MASKS (like your example) ---------- */}
@@ -149,8 +149,8 @@ const HeroSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gold text-black hover:bg-gold/90
-                         shadow-[0_20px_60px_rgba(255,190,100,0.5)]
+              className="bg-primary text-white hover:bg-primary/90
+                         shadow-[0_20px_60px_rgba(18,86,153,0.5)]
                          text-base font-semibold px-8"
             >
               <Link to="/demo">

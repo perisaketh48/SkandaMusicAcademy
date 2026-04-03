@@ -10,8 +10,8 @@ const HomeMissionVisionPreview = () => {
         className="
           max-w-7xl mx-auto
           rounded-3xl
-          border border-amber-200
-          bg-[#fffaf2]
+          border border-blue-200
+          bg-[#f0f7ff]
           shadow-[0_10px_40px_rgba(0,0,0,0.08)]
           p-8 lg:p-14
         "
@@ -25,9 +25,9 @@ const HomeMissionVisionPreview = () => {
         <div className="flex flex-col lg:flex-row gap-14 items-center">
           {/* ================= LEFT CONTENT ================= */}
           <div className="w-full lg:w-1/2">
-            <div className="space-y-5 text-stone-700 leading-relaxed text-[1.05rem]">
+            <div className="space-y-5 text-slate-600 leading-relaxed text-[1.05rem]">
               <p>
-                <span className="font-semibold text-stone-900">
+                <span className="font-semibold text-slate-900">
                   Skanda Music Academy
                 </span>{" "}
                 is founded with the vision of preserving, nurturing, and sharing
@@ -37,12 +37,12 @@ const HomeMissionVisionPreview = () => {
 
               <p>
                 Established by{" "}
-                <span className="font-semibold text-stone-900">
+                <span className="font-semibold text-slate-900">
                   Smt. Ramani Varahabhatla
                 </span>
                 , the academy is a heartfelt effort to bring structured,
                 soulful, and meaningful Carnatic music education to the{" "}
-                <span className="font-semibold text-stone-900">
+                <span className="font-semibold text-slate-900">
                   Indian-Australian community in Melbourne, Victoria
                 </span>
                 .
@@ -62,10 +62,10 @@ const HomeMissionVisionPreview = () => {
                 mt-8 inline-flex items-center
                 px-7 py-3
                 rounded-full
-                bg-amber-600
+                bg-[#125699]
                 text-white font-semibold
                 shadow-md
-                hover:bg-amber-700
+                hover:bg-[#0e4680]
                 transition-all duration-300
               "
             >
@@ -84,7 +84,7 @@ const HomeMissionVisionPreview = () => {
                 object-cover
                 rounded-2xl
                 shadow-lg
-                border border-amber-100
+                border border-blue-100
               "
             />
           </div>
