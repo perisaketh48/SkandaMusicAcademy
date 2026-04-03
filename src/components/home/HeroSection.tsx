@@ -11,7 +11,7 @@ const HeroSection = () => {
         <img
           src="/Assets/images/hero_section.png"
           alt="Carnatic music teaching"
-          className="w-full h-full object-fit scale-x-[1]"
+          className="w-full h-full object-cover scale-100"
         />
 
         {/* cinematic dark overlay */}
