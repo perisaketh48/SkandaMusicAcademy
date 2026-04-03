@@ -113,7 +113,9 @@ const VisionMissionSection = () => {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start fade-in-up">
               {/* TEXT */}
               <div className="w-full lg:w-1/2">
-                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4 sm:mb-6">Our Vision</h3>
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4 sm:mb-6">
+                  Our Vision
+                </h3>
 
                 <div
                   className={`
@@ -147,7 +149,7 @@ const VisionMissionSection = () => {
 
                   <p>
                     At Skanda Music Academy, our vision is:
-                    <b className=”text-[#3BA0FF] ml-2”>
+                    <b className="text-[#3BA0FF] ml-2">
                       “To make Carnatic music a lifelong companion of beauty,
                       devotion, and inner growth.”
                     </b>
@@ -183,7 +185,9 @@ const VisionMissionSection = () => {
                 />
               </div>
               <div className="w-full lg:w-1/2">
-                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4 sm:mb-6">Our Mission</h3>
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4 sm:mb-6">
+                  Our Mission
+                </h3>
                 <div className="space-y-4 sm:space-y-5 text-white/75 leading-relaxed text-sm sm:text-[1.05rem]">
                   <p>
                     Our mission is to provide personalised, high-quality
