@@ -42,8 +42,8 @@ const Slots = () => {
       />
 
       {/* Time Zone Notice */}
-      <section className="py-12 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 bg-[#f6faff]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-3 bg-gold/10 px-6 py-3 rounded-full">
               <Clock className="h-5 w-5 text-gold" />
@@ -57,7 +57,7 @@ const Slots = () => {
 
       {/* Weekly Schedule */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Weekly Schedule"
             subtitle="Check our available time slots for the current week"
@@ -72,8 +72,8 @@ const Slots = () => {
               >
                 <div className="bg-gradient-to-r from-primary to-accent p-4">
                   <div className="flex items-center gap-3">
-                    <Calendar className="h-5 w-5 text-primary-foreground" />
-                    <h3 className="font-serif font-bold text-primary-foreground">
+                    <Calendar className="h-5 w-5 text-white" />
+                    <h3 className="font-serif font-bold text-white">
                       {day}
                     </h3>
                   </div>
@@ -118,8 +118,8 @@ const Slots = () => {
       </section>
 
       {/* Custom Scheduling */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-20 bg-[#f6faff]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <SectionHeading
               title="Need a Different Time?"
@@ -162,12 +162,12 @@ const Slots = () => {
       </section>
 
       {/* Book CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary via-accent to-gold">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary-foreground mb-6">
+      <section className="py-20 bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
             Ready to Book Your Slot?
           </h2>
-          <p className="text-primary-foreground/90 max-w-2xl mx-auto mb-8 text-lg">
+          <p className="text-white/80 max-w-2xl mx-auto mb-8 text-lg">
             Start with a free demo class to experience our teaching approach,
             then choose a regular slot that fits your schedule.
           </p>
@@ -186,7 +186,7 @@ const Slots = () => {
               asChild
               size="lg"
               variant="outline"
-              className="bg-primary-foreground/10 border-primary-foreground/40 border-2 text-primary-foreground hover:bg-primary-foreground/20"
+              className="bg-white/10 border-white/30 border-2 text-white hover:bg-white/15"
             >
               <Link to="/contact">Contact for Custom Timing</Link>
             </Button>

@@ -14,12 +14,12 @@ const SectionHeading = ({
   centered = true,
 }: SectionHeadingProps) => {
   return (
-    <div className={cn(centered && "text-center", "mb-4", className)}>
-      <h2 className="text-3xl md:text-4xl font-serif font-bold text-gradient-warm mb-4">
+    <div className={cn(centered && "text-center", "mb-6 sm:mb-8", className)}>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gradient-warm mb-3 sm:mb-4">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+        <p className="text-muted-foreground max-w-3xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed px-2">
           {subtitle}
         </p>
       )}

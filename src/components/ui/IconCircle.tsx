@@ -22,8 +22,8 @@ const IconCircle = ({ icon: Icon, size = "md", variant = "gradient", className }
   };
 
   const variantClasses = {
-    gradient: "bg-gradient-to-br from-primary to-gold shadow-gold",
-    soft: "bg-gradient-to-br from-primary/10 to-gold/10",
+    gradient: "bg-gradient-to-br from-[#125699] to-[#1E90FF] shadow-[0_6px_20px_rgba(30,144,255,0.3)]",
+    soft: "bg-primary/10",
   };
 
   return (
@@ -35,7 +35,7 @@ const IconCircle = ({ icon: Icon, size = "md", variant = "gradient", className }
         className
       )}
     >
-      <Icon className={cn(iconSizes[size], variant === "gradient" ? "text-primary-foreground" : "text-primary")} />
+      <Icon className={cn(iconSizes[size], variant === "gradient" ? "text-white" : "text-primary")} />
     </div>
   );
 };

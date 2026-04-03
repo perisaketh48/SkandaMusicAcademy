@@ -333,12 +333,12 @@ const About = () => {
       />
 
       {/* ================= OUR STORY ================= */}
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="py-10 sm:py-12 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="fade-in-up">
               <SectionHeading title="Our Story" centered={false} />
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed text-sm sm:text-base">
                 <p>
                   Skanda Music Academy was born from a deep passion for Carnatic
                   music and a heartfelt desire to preserve its purity while
@@ -367,11 +367,11 @@ const About = () => {
                 />
 
                 {/* OVERLAY */}
-                <div className="absolute inset-0 bg-black/30" />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-transparent to-accent/30" />
+                <div className="absolute inset-0 bg-[#0D2137]/60" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#125699]/30 via-transparent to-[#1E90FF]/20" />
 
                 {/* CONTENT */}
-                <div className="relative z-10 p-10">
+                <div className="relative z-10 p-6 sm:p-10">
                   <div className="flex flex-col items-center text-center">
                     <IconCircle
                       icon={Music2}
@@ -397,14 +397,14 @@ const About = () => {
       </section>
 
       {/* ================= FOUNDER'S MESSAGE ================= */}
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <section className="py-10 sm:py-12 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* LEFT – FOUNDER IMAGE */}
             <div className="lg:col-span-4 flex justify-center fade-in-up">
               <div className="relative">
                 {/* Soft glow */}
-                <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-gold/50 via-accent/40 to-primary/40 blur-2xl opacity-40" />
+                <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[#1E90FF]/30 via-[#125699]/20 to-[#0D3F73]/20 blur-2xl opacity-40" />
 
                 {/* 3D frame */}
                 <div className="relative p-2 rounded-full bg-background shadow-[0_30px_60px_-15px_rgba(0,0,0,0.35)]">
@@ -412,11 +412,12 @@ const About = () => {
                     src="/Assets/images/14.jpg"
                     alt="Founder of Skanda Music Academy"
                     className="
-                w-60 h-60
+                w-48 h-48
+                sm:w-60 sm:h-60
                 md:w-80 md:h-80
                 rounded-full
                 object-cover
-                ring-4 ring-gold/40
+                ring-4 ring-[#1E90FF]/30
               "
                   />
                 </div>
@@ -432,9 +433,9 @@ const About = () => {
               />
 
               {/* Divider */}
-              <div className="w-20 h-[2px] bg-gradient-to-r from-gold to-accent rounded-full" />
+              <div className="w-20 h-[2px] bg-gradient-to-r from-[#125699] to-[#1E90FF] rounded-full" />
 
-              <div className="space-y-6 text-muted-foreground leading-relaxed text-[1.05rem]">
+              <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed text-sm sm:text-[1.05rem]">
                 <p>
                   Namaste and welcome to <b>Skanda Music Academy</b>,
                   <br /> Music has been a guiding force in my life, shaping my
@@ -457,12 +458,12 @@ const About = () => {
                 }
                 className="
             mt-4 inline-flex items-center
-            px-7 py-3
-            rounded-full
-            bg-primary text-white font-semibold
-            shadow-md
-            hover:shadow-xl hover:scale-105
-            transition-all duration-300
+            px-6 sm:px-7 py-2.5 sm:py-3
+            rounded-lg
+            bg-primary text-white font-semibold text-sm sm:text-base
+            shadow-sm
+            hover:bg-primary/90 hover:shadow-md
+            transition-all duration-200
           "
               >
                 Read About the Founder
@@ -476,10 +477,10 @@ const About = () => {
       <VisionMissionSection />
 
       {/* ================= ABOUT THE FOUNDER ================= */}
-      <section ref={founderRef} className="py-8 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section ref={founderRef} className="py-10 sm:py-14 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* SECTION HEADER */}
-          <div className="w-fit mx-auto mb-16">
+          <div className="w-fit mx-auto mb-10 sm:mb-16">
             <SectionHeading
               title="About the Founder"
               subtitle="A journey rooted in tradition, discipline, and devotion"
@@ -487,12 +488,12 @@ const About = () => {
             />
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-16 items-start">
+          <div className="grid lg:grid-cols-3 gap-10 lg:gap-16 items-start">
             {/* ================= LEFT : FOUNDER PROFILE ================= */}
             <div className="lg:col-span-1 flex justify-center fade-in-up">
               <div className="relative text-center">
                 {/* soft aura */}
-                <div className="absolute -inset-6 rounded-full bg-gradient-to-br from-gold/30 via-accent/20 to-primary/20 blur-2xl opacity-40" />
+                <div className="absolute -inset-6 rounded-full bg-gradient-to-br from-[#1E90FF]/20 via-[#125699]/15 to-[#0D3F73]/15 blur-2xl opacity-40" />
 
                 {/* image frame */}
                 <div className="relative p-2 rounded-full bg-background shadow-[0_30px_60px_-15px_rgba(0,0,0,0.35)]">
@@ -500,12 +501,13 @@ const About = () => {
                     src="/Assets/images/11.jpg"
                     alt="Ramani Varahabhatla – Founder of Skanda Music Academy"
                     className="
-                w-48 h-48
+                w-40 h-40
+                sm:w-48 sm:h-48
                 md:w-56 md:h-56
                 rounded-full
                 object-cover
                 object-top
-                ring-2 ring-gold/40
+                ring-2 ring-[#1E90FF]/25
               "
                   />
                 </div>
@@ -610,7 +612,7 @@ const About = () => {
                 </div>
 
                 {/* PHILOSOPHY */}
-                <div className="relative mt-4 p-6 rounded-2xl border border-border bg-gradient-to-br from-primary/10 via-gold/10 to-accent/10">
+                <div className="relative mt-4 p-5 sm:p-6 rounded-2xl border border-border bg-[#f6faff]">
                   <p>
                     Through Skanda Music Academy, Ramani brings together
                     rigorous training, academic depth, teaching expertise, and
@@ -633,14 +635,14 @@ const About = () => {
       </section>
 
       {/* ================= CORE VALUES ================= */}
-      <section className="py-8 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-10 sm:py-14 bg-[#f6faff]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Our Core Values"
             subtitle="The principles that guide our teaching and tradition"
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {values.map((value, i) => (
               <FeatureCard
                 key={i}

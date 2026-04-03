@@ -143,15 +143,15 @@ const WhatMakesUsDifferent = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-12 sm:py-16 bg-[#f6faff]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="What Makes Us Different"
           subtitle="At Skanda Music Academy, we keep learning simple, personal, and meaningful. Our approach blends traditional Carnatic values with modern flexibility so every student receives the clarity, comfort, and confidence they need to grow beautifully in their musical journey."
         />
 
         {/* Auto-scrolling Carousel */}
-        <div className="mt-14 max-w-6xl mx-auto">
+        <div className="mt-10 sm:mt-14 max-w-6xl mx-auto">
           <Carousel
             opts={{
               align: "start",
@@ -166,18 +166,18 @@ const WhatMakesUsDifferent = () => {
                 const Icon = item.icon;
                 return (
                   <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-6 h-full">
-                      <div className="flex h-full flex-col items-center text-center bg-background border border-border rounded-2xl px-6 py-8">
+                    <div className="p-3 sm:p-6 h-full">
+                      <div className="flex h-full flex-col items-center text-center bg-white border border-border rounded-2xl px-5 sm:px-6 py-6 sm:py-8 hover:shadow-sm transition-shadow">
                         {/* Icon */}
-                        <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
-                          <Icon size={26} />
+                        <div className="mb-3 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-primary/8 text-primary">
+                          <Icon size={24} />
                         </div>
 
                         {/* Content */}
-                        <h3 className="font-serif text-xl text-gradient-warm mb-2">
+                        <h3 className="font-serif text-lg sm:text-xl font-semibold text-foreground mb-2">
                           {item.title}
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed text-sm">
+                        <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm">
                           {item.description}
                         </p>
                       </div>

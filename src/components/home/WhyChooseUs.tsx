@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
       icon: User,
       title: "One-on-One Classes",
       description:
-        "Individualised attention tailored to each student’s voice, pace, and learning style.",
+        "Individualised attention tailored to each student's voice, pace, and learning style.",
     },
     {
       icon: Users,
@@ -70,29 +70,28 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-12 bg-background">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-12 sm:py-16 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Why Skanda Music Academy?"
-          subtitle="At Skanda Music Academy, learning Carnatic music is not just about attending a class, it is a personal, guided, and enriching musical journey.
-We ensure every student receives the attention, clarity, and confidence they need to grow beautifully in their musical path."
+          subtitle="At Skanda Music Academy, learning Carnatic music is not just about attending a class, it is a personal, guided, and enriching musical journey."
         />
 
         {/* Compact Feature Grid */}
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
+        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-5 sm:gap-y-6">
           {features.map((feature, i) => {
             const Icon = feature.icon;
             return (
-              <div key={i} className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Icon size={22} />
+              <div key={i} className="flex items-start gap-3 sm:gap-4 p-3 sm:p-0">
+                <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-primary/8 text-primary">
+                  <Icon size={20} />
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-base leading-tight">
+                  <h4 className="font-semibold text-sm sm:text-base leading-tight text-foreground">
                     {feature.title}
                   </h4>
-                  <p className="mt-1 text-sm text-muted-foreground leading-snug">
+                  <p className="mt-1 text-xs sm:text-sm text-muted-foreground leading-snug">
                     {feature.description}
                   </p>
                 </div>

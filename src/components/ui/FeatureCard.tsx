@@ -13,18 +13,18 @@ const FeatureCard = ({ icon: Icon, title, description, className, delay = 0 }: F
   return (
     <div
       className={cn(
-        "p-8 bg-card rounded-2xl border border-border hover:border-gold/40 hover-glow fade-in-up transition-all group",
+        "p-6 sm:p-8 bg-white rounded-2xl border border-border hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(30,144,255,0.1)] fade-in-up transition-all duration-300 group",
         className
       )}
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-gold/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-        <Icon className="h-7 w-7 text-primary" />
+      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/8 flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-primary/12 transition-colors">
+        <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
       </div>
-      <h3 className="font-serif text-xl text-gradient-warm mb-3">
+      <h3 className="font-serif text-lg sm:text-xl text-foreground font-semibold mb-2 sm:mb-3">
         {title}
       </h3>
-      <p className="text-muted-foreground leading-relaxed">
+      <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
         {description}
       </p>
     </div>

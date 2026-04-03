@@ -93,7 +93,7 @@
 
 //       {/* Course Cards */}
 //       <section className="py-20 bg-background">
-//         <div className="container mx-auto px-4 lg:px-8">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 //           <div className="grid lg:grid-cols-2 gap-8">
 //             {courses.map((course, i) => (
 //               <div
@@ -156,7 +156,7 @@
 
 //       {/* Learning Format */}
 //       <section className="py-20 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-//         <div className="container mx-auto px-4 lg:px-8">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 //           <SectionHeading
 //             title="Learning Format"
 //             subtitle="Flexible options designed to fit your lifestyle and learning preferences"
@@ -198,7 +198,7 @@
 
 //       {/* CTA */}
 //       <section className="py-20 bg-gradient-to-r from-primary via-accent to-gold">
-//         <div className="container mx-auto px-4 lg:px-8 text-center">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
 //           <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary-foreground mb-6">
 //             Ready to Start Your Musical Journey?
 //           </h2>
@@ -461,7 +461,7 @@ const Courses = () => {
       />
 
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <Accordion type="single" collapsible className="space-y-6">
             {coursesData.map((course) => {
               const Icon = course.icon;

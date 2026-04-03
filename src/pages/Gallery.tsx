@@ -97,7 +97,7 @@ const Gallery = () => {
 
         {/* CONTENT */}
         <div className="relative z-10 py-12">
-          <div className="container mx-auto px-4 lg:px-8">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* HEADER */}
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">

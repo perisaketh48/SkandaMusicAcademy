@@ -66,7 +66,7 @@ const Pricing = () => {
 
       {/* Pricing Cards */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {plans.map((plan, i) => (
               <div
@@ -80,7 +80,7 @@ const Pricing = () => {
               >
                 {plan.popular && (
                   <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-gold via-accent to-gold py-2 text-center">
-                    <div className="flex items-center justify-center gap-2 text-sm font-semibold text-primary-foreground">
+                    <div className="flex items-center justify-center gap-2 text-sm font-semibold text-white">
                       <Star className="h-4 w-4" />
                       Most Popular
                     </div>
@@ -132,8 +132,8 @@ const Pricing = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-20 bg-[#f6faff]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Frequently Asked Questions"
             subtitle="Everything you need to know about our pricing and plans"
@@ -177,12 +177,12 @@ const Pricing = () => {
       </section>
 
       {/* Money Back Guarantee */}
-      <section className="py-20 bg-gradient-to-r from-primary via-accent to-gold">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary-foreground mb-6">
+      <section className="py-20 bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
             30-Day Money-Back Guarantee
           </h2>
-          <p className="text-primary-foreground/90 max-w-2xl mx-auto mb-8 text-lg">
+          <p className="text-white/80 max-w-2xl mx-auto mb-8 text-lg">
             We're confident you'll love learning with us. If you're not
             completely satisfied within the first 30 days, we'll refund your
             payment, no questions asked.

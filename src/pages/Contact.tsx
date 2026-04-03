@@ -66,7 +66,7 @@ const Contact = () => {
 
       {/* Contact Info Cards */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-center">
             {contactInfo.map((info, i) => (
               <div
@@ -94,8 +94,8 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-gold/5 to-accent/5">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-20 bg-[#f6faff]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="fade-in-up">
               <SectionHeading title="Send Us a Message" centered={false} />
@@ -174,8 +174,8 @@ const Contact = () => {
             </div>
 
             <div className="slide-in-right">
-              <div className="bg-gradient-to-br from-tertiary via-primary to-secondary rounded-2xl p-8 lg:p-12 h-full flex flex-col justify-center">
-                <h3 className="text-2xl font-serif font-bold text-primary-foreground mb-6">
+              <div className="bg-gradient-to-br from-[#0D2137] via-[#125699] to-[#0D3F73] rounded-2xl p-6 sm:p-8 lg:p-12 h-full flex flex-col justify-center">
+                <h3 className="text-2xl font-serif font-bold text-white mb-6">
                   Why Choose Skanda Music Academy?
                 </h3>
                 <ul className="space-y-4">
@@ -189,19 +189,19 @@ const Contact = () => {
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="flex items-center gap-3 text-primary-foreground/90"
+                      className="flex items-center gap-3 text-white/85"
                     >
-                      <div className="w-2 h-2 rounded-full bg-gold shrink-0"></div>
+                      <div className="w-2 h-2 rounded-full bg-[#1E90FF] shrink-0"></div>
                       {item}
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 pt-8 border-t border-primary-foreground/20">
-                  <p className="text-primary-foreground/80 text-sm italic">
+                <div className="mt-8 pt-8 border-t border-white/15">
+                  <p className="text-white/80 text-sm italic">
                     "The best time to start your musical journey is now. We're
                     here to guide you every step of the way."
                   </p>
-                  <p className="text-primary-foreground/60 text-sm mt-2">
+                  <p className="text-white/60 text-sm mt-2">
                     The Skanda Team
                   </p>
                 </div>
@@ -213,7 +213,7 @@ const Contact = () => {
 
       {/* Map/Location Section */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading
             title="Global Reach, Personal Touch"
             subtitle="While based in Hyderabad, India, we teach students from around the world through our online platform."

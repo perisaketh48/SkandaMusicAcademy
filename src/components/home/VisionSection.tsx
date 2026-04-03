@@ -85,8 +85,8 @@ const VisionMissionSection = () => {
   const [visionExpanded, setVisionExpanded] = useState(false);
 
   return (
-    <section className="relative mx-2 rounded-3xl shadow-elegant">
-      <div className="relative rounded-3xl overflow-hidden">
+    <section className="relative mx-3 sm:mx-4 rounded-2xl sm:rounded-3xl shadow-elegant">
+      <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden">
         {/* ---------- BACKGROUND ---------- */}
         <div className="absolute inset-0 pointer-events-none">
           <img
@@ -94,32 +94,32 @@ const VisionMissionSection = () => {
             alt="Carnatic music ambience"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-transparent to-accent/20" />
+          <div className="absolute inset-0 bg-[#0D2137]/75" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#125699]/20 via-transparent to-[#1E90FF]/15" />
         </div>
 
         {/* ---------- CONTENT ---------- */}
         <div
           className="
             relative z-10
-            p-8 lg:p-12
-            bg-card/60 backdrop-blur-xl
-            border border-white/20
-            rounded-3xl
+            p-5 sm:p-8 lg:p-12
+            bg-white/5 backdrop-blur-xl
+            border border-white/10
+            rounded-2xl sm:rounded-3xl
           "
         >
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-10 sm:gap-16">
             {/* ================= VISION (TEXT + IMAGE) ================= */}
-            <div className="flex flex-col lg:flex-row gap-12 items-start fade-in-up">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start fade-in-up">
               {/* TEXT */}
               <div className="w-full lg:w-1/2">
-                <SectionHeading title="Our Vision" className="mb-6" />
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4 sm:mb-6">Our Vision</h3>
 
                 <div
                   className={`
-                    space-y-5 text-muted-foreground leading-relaxed text-[1.05rem]
+                    space-y-4 sm:space-y-5 text-white/75 leading-relaxed text-sm sm:text-[1.05rem]
                     transition-all duration-500 overflow-hidden
-                    ${visionExpanded ? "max-h-[2000px]" : "max-h-[220px]"}
+                    ${visionExpanded ? "max-h-[2000px]" : "max-h-[180px] sm:max-h-[220px]"}
                   `}
                 >
                   <p>
@@ -156,7 +156,7 @@ const VisionMissionSection = () => {
 
                 <button
                   onClick={() => setVisionExpanded(!visionExpanded)}
-                  className="mt-5 text-gold font-semibold hover:text-accent transition-colors"
+                  className="mt-4 sm:mt-5 text-[#3BA0FF] font-semibold hover:text-[#60B5FF] transition-colors text-sm sm:text-base"
                 >
                   {visionExpanded ? "Show Less" : "Read More"}
                 </button>
@@ -173,18 +173,18 @@ const VisionMissionSection = () => {
             </div>
 
             {/* ================= MISSION (RIGHT-ALIGNED BLOCK) ================= */}
-            <div className="flex flex-col lg:flex-row gap-12 items-start fade-in-up">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start fade-in-up">
               {/* IMAGE */}
               <div className="w-full lg:w-1/2">
                 <img
                   src="/Assets/images/15.jpg"
                   alt="Carnatic music teaching"
-                  className="rounded-2xl shadow-xl object-cover"
+                  className="rounded-xl sm:rounded-2xl shadow-xl object-cover"
                 />
               </div>
               <div className="w-full lg:w-1/2">
-                <SectionHeading title="Our Mission" className="mb-6" />
-                <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.05rem]">
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4 sm:mb-6">Our Mission</h3>
+                <div className="space-y-4 sm:space-y-5 text-white/75 leading-relaxed text-sm sm:text-[1.05rem]">
                   <p>
                     Our mission is to provide personalised, high-quality
                     Carnatic music training through one-on-one sessions,
