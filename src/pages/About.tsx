@@ -489,11 +489,11 @@ const About = () => {
                 <div className="hidden sm:block absolute -inset-6 rounded-full bg-gradient-to-br from-[#1877F2]/15 via-[#1877F2]/10 to-[#0a52c2]/10 blur-2xl opacity-30" />
 
                 {/* image frame */}
-                <div className="relative p-1.5 sm:p-2 rounded-full bg-white shadow-[0_8px_25px_-8px_rgba(18,86,153,0.2)] sm:shadow-[0_15px_40px_-12px_rgba(18,86,153,0.2)]">
+                <div className="relative p-1.5 sm:p-2 rounded-full  ">
                   <img
                     src="/Assets/images/11.jpg"
                     alt="Ramani Varahabhatla – Founder of Skanda Music Academy"
-                    className="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full object-cover object-top ring-2 ring-[#1877F2]/15"
+                    className="w-32 h-32 sm:w-44 sm:h-44 md:w-52 m-auto md:h-52 rounded-full object-cover object-top ring-2 ring-[#1877F2]/15"
                   />
                 </div>
 
