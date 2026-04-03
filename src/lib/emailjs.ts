@@ -37,8 +37,8 @@ import emailjs from "@emailjs/browser";
 
 const EMAILJS_CONFIG = {
   serviceId: "service_cpiiczj",
-  contactTemplateId: "template_k0ptqzs",
-  demoTemplateId: "template_abptn7n",
+  contactTemplateId: "template_abptn7n",
+  demoTemplateId: "template_k0ptqzs",
   publicKey: "yjDnCuevWwbXngDan",
 };
 
