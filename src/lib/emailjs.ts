@@ -36,10 +36,10 @@ import emailjs from "@emailjs/browser";
 // ============================================================
 
 const EMAILJS_CONFIG = {
-  serviceId: "YOUR_SERVICE_ID",        // e.g. "service_abc123"
-  contactTemplateId: "YOUR_CONTACT_TEMPLATE_ID",  // e.g. "template_xyz789"
-  demoTemplateId: "YOUR_DEMO_TEMPLATE_ID",        // e.g. "template_def456"
-  publicKey: "YOUR_PUBLIC_KEY",         // e.g. "aBcDeFgHiJkLmN"
+  serviceId: "service_cpiiczj",
+  contactTemplateId: "template_k0ptqzs",
+  demoTemplateId: "template_abptn7n",
+  publicKey: "yjDnCuevWwbXngDan",
 };
 
 // Academy email for receiving notifications
