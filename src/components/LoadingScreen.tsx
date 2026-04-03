@@ -23,19 +23,20 @@ const LoadingScreen = ({ onFinished }: LoadingScreenProps) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] bg-[#0D2137] flex items-center justify-center transition-opacity duration-600 ${
+      className={`fixed inset-0 z-[9999] bg-[#f2f2f2] flex items-center justify-center transition-opacity duration-600 ${
         fadeOut ? "opacity-0" : "opacity-100"
       }`}
     >
       <video
         ref={videoRef}
-        src="/Assets/loader.mp4"
+        src="/loader.mp4"
         autoPlay
         muted
         playsInline
         onEnded={handleVideoEnd}
         onError={handleError}
-        className="w-full h-full object-contain max-w-[90vw] max-h-[90vh]"
+        className="w-[500px] h-[500px] object-contain"
+        style={{ background: "transparent" }}
       />
     </div>
   );
