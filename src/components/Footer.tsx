@@ -80,7 +80,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-[#1E90FF] shrink-0 mt-0.5" />
                 <span className="text-sm text-white/70">
-                  Online Classes Worldwide
+                  Werribee VIC, Australia
                 </span>
               </li>
             </ul>
