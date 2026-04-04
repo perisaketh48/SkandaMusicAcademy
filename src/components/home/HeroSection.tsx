@@ -5,14 +5,75 @@ import FloatingMusicNotes from "@/components/FloatingMusicNotes";
 
 const HeroSection = () => {
   return (
+    // <section className="relative min-h-[90vh] sm:min-h-[100vh] w-full overflow-hidden">
+    //   {/* ---------- BACKGROUND IMAGE LAYER ---------- */}
+    //   <div className="absolute inset-0">
+    //     <img
+    //       src="/Assets/images/hero_section.png"
+    //       alt="Carnatic music teaching"
+    //       className="w-full h-full object-cover scale-100 opacity-75"
+    //     />
+    //   </div>
+
+    //   {/* ---------- ORGANIC EDGE MASKS ---------- */}
+    //   <div className="absolute top-0 left-0 w-full h-16 sm:h-24 bg-background clip-top-wave z-20" />
+    //   <div className="absolute bottom-0 left-0 w-full h-16 sm:h-24 bg-background clip-bottom-wave z-20" />
+
+    //   {/* ---------- FLOATING MUSICAL DEPTH ---------- */}
+    //   <FloatingMusicNotes count={14} />
+
+    //   {/* ---------- CONTENT ---------- */}
+    //   <div className="relative z-30 min-h-[90vh] sm:min-h-[100vh] flex items-center">
+    //     <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+    //       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-black leading-tight mb-4 sm:mb-6 drop-shadow-xl">
+    //         Learn the Tradition.
+    //         <br className="hidden sm:block" />
+    //         <span className="text-[#000000]">Live the Music.</span>
+    //       </h1>
+
+    //       <p className="text-base sm:text-lg md:text-xl text-[#222] font-bold mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
+    //         To inspire every learner to discover their voice, honour tradition,
+    //         and grow through the soulful journey of Carnatic music.
+    //       </p>
+
+    //       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+    //         <Button
+    //           asChild
+    //           size="lg"
+    //           className="bg-primary text-white hover:bg-primary/90
+    //                      shadow-[0_12px_40px_rgba(30,144,255,0.35)]
+    //                      hover:shadow-[0_16px_50px_rgba(30,144,255,0.45)]
+    //                      text-base font-semibold px-8 py-6 transition-all duration-200"
+    //         >
+    //           <Link to="/demo">
+    //             Book a Demo Class
+    //             <ArrowRight className="ml-2 h-5 w-5" />
+    //           </Link>
+    //         </Button>
+
+    //         <Button
+    //           asChild
+    //           size="lg"
+    //           variant="outline"
+    //           className="border-black/40 text-black font-extrabold bg-black/5 hover:bg-black/15 backdrop-blur-sm px-8 py-6 transition-all duration-200"
+    //         >
+    //           <Link to="/about">Explore the Academy</Link>
+    //         </Button>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
+
     <section className="relative min-h-[90vh] sm:min-h-[100vh] w-full overflow-hidden">
       {/* ---------- BACKGROUND IMAGE LAYER ---------- */}
       <div className="absolute inset-0">
         <img
           src="/Assets/images/hero_section.png"
           alt="Carnatic music teaching"
-          className="w-full h-full object-cover scale-100 opacity-75"
+          className="w-full h-full object-cover "
         />
+        {/* Dark overlay to ensure white text is readable against the mirrored image */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* ---------- ORGANIC EDGE MASKS ---------- */}
@@ -25,13 +86,15 @@ const HeroSection = () => {
       {/* ---------- CONTENT ---------- */}
       <div className="relative z-30 min-h-[90vh] sm:min-h-[100vh] flex items-center">
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-black leading-tight mb-4 sm:mb-6 drop-shadow-xl">
+          {/* UPDATED: Added your  class */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 sm:mb-6  drop-shadow-2xl">
             Learn the Tradition.
             <br className="hidden sm:block" />
-            <span className="text-[#000000]">Live the Music.</span>
+            <span className="text-white">Live the Music.</span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-[#222] font-bold mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
+          {/* UPDATED: Added your  class */}
+          <p className="text-base sm:text-lg md:text-xl text-white font-semibold mb-8 sm:mb-10 max-w-2xl mx-auto px-2 ">
             To inspire every learner to discover their voice, honour tradition,
             and grow through the soulful journey of Carnatic music.
           </p>
@@ -41,9 +104,9 @@ const HeroSection = () => {
               asChild
               size="lg"
               className="bg-primary text-white hover:bg-primary/90 
-                         shadow-[0_12px_40px_rgba(30,144,255,0.35)]
-                         hover:shadow-[0_16px_50px_rgba(30,144,255,0.45)]
-                         text-base font-semibold px-8 py-6 transition-all duration-200"
+                     shadow-[0_12px_40px_rgba(30,144,255,0.35)]
+                     hover:shadow-[0_16px_50px_rgba(30,144,255,0.45)]
+                     text-base font-semibold px-8 py-6 transition-all duration-200"
             >
               <Link to="/demo">
                 Book a Demo Class
@@ -55,7 +118,7 @@ const HeroSection = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-black/40 text-black font-extrabold bg-black/5 hover:bg-black/15 backdrop-blur-sm px-8 py-6 transition-all duration-200"
+              className="border-white/60 text-white font-bold bg-white/10 hover:bg-white/20 backdrop-blur-md px-8 py-6 transition-all duration-200"
             >
               <Link to="/about">Explore the Academy</Link>
             </Button>
